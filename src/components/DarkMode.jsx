@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -16,8 +18,8 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button onClick={toggleDarkMode}>
-      {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+    <button onClick={toggleDarkMode} className='text-slate-200'>
+      {isDarkMode ? <MdLightMode size={30}/> : <MdDarkMode size={30}/>}
     </button>
   );
 };
