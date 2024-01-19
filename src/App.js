@@ -9,7 +9,7 @@ import DarkModeToggle from "./components/DarkMode";
 function App() {
   return (
     <div className="app dark:bg-neutral-800">
-        <div className="hidden lg:flex  absolute top-40 py-3 px-4 rounded-r-full left-0 bg-fuchsia-600">
+        <div className="hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-fuchsia-600">
         <DarkModeToggle />
         </div>
       <Navbar />

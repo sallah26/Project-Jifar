@@ -17,22 +17,22 @@ const Hero = () => {
               <span className='pt-2'>Choose Us</span>
             </p>
           </div>
-          <p className="p-2 lg:pt-8">
+          <p className="md:p-2 mt-3 lg:mt-0 lg:pt-8 text-sm md:text-md lg:text-lg">
             We Help Event Planning Service & Businesses Produce Spine-Chilling
             ROI Via Paid Advertisement. Stop wasting time and money on faulty
             and ineffective ad campaigns. It's time to make your ad-budget
             count, scale your business and blow up your sales.
           </p>
-          <div className="mt-2">
+          <div className="mt-5 lg:mt-3 md:ml-2">
             <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
           </div>
         </div>
-        <div className="relative p-4">
+        <div className="relative md:p-4">
           <img src={window_img} className="w-4/6 lg:w-3/4 h-auto" alt="" />
           <img
             src={man_image}
             alt=""
-            className="absolute top-20 left-20  w-4/5 lg:w-full h-auto"
+            className="absolute top-5 left-10 md:top-20 md:left-20  w-full h-auto"
           />
         </div>
       </section>
