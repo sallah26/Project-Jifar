@@ -3,12 +3,12 @@ import AnimatedButton from './AnimatedButton';
 
 const Navbar = () => {
   return (
-    <nav className="text-4xl  bg-slate-800 min-w-full">
-      <div className="flex justify-evenly">
-        <div className="flex justify-between max-w-[1300px] items-center p-4 font-light ">
+   
+    <nav className=" bg-slate-800 min-h-20 flex items-center">
+        <div className="container max-w-[1400px] mx-auto px-4 flex  justify-between">
           {/* <img src={} alt="" /> */}
           <p className="text-3xl text-blue-500">Jifar LOGO</p>
-          <ul className="flex gap-10  items-center">
+          <ul className="hidden lg:flex gap-10  items-center">
             <li className="flex justify-center">
               <a href="#login" className="text-sm text-white hover:bg-rounded ">
                 Services
@@ -29,9 +29,10 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
+            <div className='hidden lg:flex'>
             <AnimatedButton name={"BOOK NOW"} />
+            </div>
           </ul>
-        </div>
       </div>
     </nav>
   );
