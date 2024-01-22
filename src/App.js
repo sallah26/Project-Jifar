@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import DarkModeToggle from "./components/DarkMode";
+import WhatWeDoFirst from "./components/WhatWeDoFirst";
+import Testimonials from "./components/Testimonials";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <div className="mt-20">
       <Hero />
       </div>
+      <Testimonials />
+      {/* <WhatWeDoFirst /> */}
     </div>
   );
 }

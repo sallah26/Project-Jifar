@@ -2,6 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* splider */
+@import '@splidejs/react-splide/css';
+@import '@splidejs/react-splide/css/skyblue';
+@import '@splidejs/react-splide/css/sea-green';
+@import '@splidejs/react-splide/css/core';
+
+
 body {
   margin: 0;
   
@@ -93,4 +100,36 @@ body {
   100% {
     background-position: 0 0;
   }
+}
+
+
+
+
+
+
+
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 65%;
+  z-index: 10;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -65%;
+  /* Initially off-screen */
+  transition: left 0.2s ease-in-out;
+  /* Transition for left property */
+  padding: 20px;
+}
+
+.sidebar.visible {
+  left: 0;
+  /* Move the sidebar to the visible position */
+}
+
+
+.special-bg{
+  background-color: #2b323b;
 }

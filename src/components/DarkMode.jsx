@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
 
   return (
     <button onClick={toggleDarkMode} className='text-slate-200'>
-      {isDarkMode ? <MdLightMode size={30}/> : <MdDarkMode size={30}/>}
+      {isDarkMode ? <MdLightMode size={27}/> : <MdDarkMode size={27}/>}
     </button>
   );
 };
