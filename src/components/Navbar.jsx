@@ -90,23 +90,23 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col text-lg gap-5 items-start mt-7">
           <li className="w-full p-0.5 border-b-2 hover:border-slate-200 border-slate-500 ">
-            <a href="#login" className="  hover:bg-rounded ">
+            <a href="#login" className="  hover:bg-rounded flex">
               Services
             </a>
           </li>
           <li className="w-full p-0.5 border-b-2 hover:border-slate-200 border-slate-500">
-            <a href="#about" className=" ">
+            <a href="#about" className=" flex">
               CRM
             </a>
           </li>
 
           <li className="w-full p-0.5 border-b-2 hover:border-slate-200 border-slate-500">
-            <a href="#about" className=" ">
+            <a href="#about" className=" flex">
               Case Studies
             </a>
           </li>
           <li className="w-full p-0.5 border-b-2 hover:border-slate-200 border-slate-500">
-            <a href="#about" className=" ">
+            <a href="#about" className="flex ">
               Contact
             </a>
           </li>
