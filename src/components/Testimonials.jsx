@@ -15,10 +15,21 @@ const Testimonials = () => {
     { id: 4, name: "Bob Johnson", text: "Highly recommend their services." },
     { id: 5, name: "Bob Johnson", text: "Highly recommend their services." },
     { id: 6, name: "Bob Johnson", text: "Highly recommend their services." },
-    { id: 7, name: "Bob Johnson", text: "Highly recommend their services." },
-    { id: 8, name: "Bob Johnson", text: "Highly recommend their services." },
-    { id: 9, name: "Bob Johnson", text: "Highly recommend their services." },
+    { id: 7, name: "Bob Johnson",
+    
+    text: "Highly recommend their services." },
+    { 
+        id: 8,
+        name: "Bob Johnson",
+        text: "Highly recommend their services." },
+    
+    { 
+        id: 9,
+        name: "Bob Johnson",
+        text: "Highly recommend their services." 
+    },
   ];
+
 
   const splideOptions = {
     type: "loop",
