@@ -27,7 +27,7 @@ const Hero = () => {
             <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
           </div>
         </div>
-        <div className="w-full lg:w-2/4 md:p-4">
+        <div className="w-full md:w-1/2 md:p-4">
           <img src={hero_img} alt="hero imagee"/>
         </div>
       </section>

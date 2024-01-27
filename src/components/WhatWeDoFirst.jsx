@@ -33,7 +33,7 @@ const WhatWeDoFirst = () => {
             MASTERY DEMANDS FOCUS SO....
           </h2>
         </div>
-        <div style={{}} className=" w-full">
+        <div style={{}} className=" w-full ">
           <img src={meta_image} alt=" Meta-imagee" className="" />
         </div>
       </div>
