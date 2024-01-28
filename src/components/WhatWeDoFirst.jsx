@@ -10,7 +10,7 @@ const WhatWeDoFirst = () => {
       <div className="absolute z-20 left-0 mt-6 lg:mt-24">
         <img src={right_curv} className="h-auto" alt="right curv img" />
       </div>
-      <div className="container z-20 p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row max-w-[1340px]">
+      <div className="container z-20 p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
         <div className="flex p-2 flex-col gap-1 w-full">
           <p className="text-md font-bold z-30 ">
             What we offer | Ads, Just Ads | Only For Event Planners

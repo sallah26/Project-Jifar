@@ -25,6 +25,34 @@ code {
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
 
+
+.splide__arrow {
+  /* background-color: #fff; */
+  color: #3233;
+  font-size: 24px;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 70px;
+  margin-left: -49px;
+    margin-right: -49px;
+  margin-top: -20px; /* Adjust vertical position */
+}
+
+.splide__pagination__page {
+  background-color: #ddd;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.splide__pagination__page.splide__pagination__page--active {
+  background-color: #333;
+}
+
+
+
 body {
   font-family: 'Myfont', sans-serif;
   font-style: normal;
