@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import DarkModeToggle from "./components/DarkMode";
 import WhatWeDoFirst from "./components/WhatWeDoFirst";
 import Testimonials from "./components/Testimonials";
+import Services from "./components/Services";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       </div>
       <WhatWeDoFirst />
       <Testimonials />
+      <Services />
     </div>
   );
 }
