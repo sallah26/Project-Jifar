@@ -6,7 +6,7 @@ import line from "../images/line-9.png";
 
 const WhatWeDoFirst = () => {
   return (
-    <section className="bg-stone-800 text-neutral-100 special-bg relative">
+    <section className="XS text-neutral-100 special-bg relative">
       <div className="absolute z-20 left-0 mt-6 lg:mt-24">
         <img src={right_curv} className="h-auto" alt="right curv img" />
       </div>
