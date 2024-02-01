@@ -8,6 +8,7 @@ import WhatWeDoFirst from "./components/WhatWeDoFirst";
 import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import Features from "./components/Features";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <WhatWeDoFirst />
       <Testimonials />
       <Services />
+      <Features />
       <Footer />
     </div>
   );

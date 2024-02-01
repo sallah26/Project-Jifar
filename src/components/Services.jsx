@@ -87,14 +87,13 @@ const Services = () => {
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
                 <div className="flex flex-col gap-3 lg:gap-5 ">
+                  <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700">
+                    Our services are
+                  </p>
                   <p className="text-3xl lg:text-4xl">{testimonial.title}</p>
-                  <p className="text-md">
-                    {testimonial.description1}
-                  </p>
-                  <p className="text-md">
-                    {testimonial.description2}
-                  </p>
-                  <div className="mt-4 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
+                  <p className="text-md">{testimonial.description1}</p>
+                  <p className="text-md">{testimonial.description2}</p>
+                  <div className="my-4 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
                     <div>
                       <AnimatedCounter value={23} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>

@@ -30,7 +30,12 @@ code {
   /* font-size: 4em; */
   /* margin-top: 1em; */
 }
-
+.splide__arrow svg {
+  fill: #f812c6;
+}
+.splide__arrow svg:hover {
+  fill: #ff8de6;
+}
 .splide__arrow {
   /* background-color: #fff; */
   /* color: #3233; */
