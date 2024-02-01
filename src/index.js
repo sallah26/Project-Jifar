@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
+import Odometer from "odometer";
+import "odometer/themes/odometer-theme-default.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

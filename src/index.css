@@ -26,29 +26,59 @@ code {
 }
 
 
+.odometer {
+  /* font-size: 4em; */
+  /* margin-top: 1em; */
+}
+
 .splide__arrow {
   /* background-color: #fff; */
-  color: #3233;
+  /* color: #3233; */
   font-size: 24px;
   /* border-radius: 50%; */
   width: 40px;
-  height: 70px;
+  height: 70%;
   margin-left: -49px;
     margin-right: -49px;
-  margin-top: -20px; /* Adjust vertical position */
+  /* margin-top: -20px; Adjust vertical position */
 }
 
+@media screen and (max-width: 758px){
 .splide__pagination__page {
-  background-color: #ddd;
+  left: 20px;
+}
+}
+
+  @media screen and (max-width: 1558px) {
+      .splide__arrow {
+          /* background-color: #fff; */
+          font-size: 16px;
+          /* border-radius: 50%; */
+          width: 30px;
+          height: 70%;
+          margin-left: -4px;
+          margin-right: -4px;
+          margin-top: -20px;
+          /* Adjust vertical position */
+        }
+      }
+
+
+.splide__pagination__page {
+  background: #d4c6c6;
   width: 10px;
   height: 10px;
   margin: 0 5px;
   border-radius: 50%;
   cursor: pointer;
 }
-
-.splide__pagination__page.splide__pagination__page--active {
-  background-color: #333;
+.splide__pagination__page:hover{
+  background: #ff8de6;
+}
+/* .splide__pagination__page.is-active{ */
+/* } */
+.splide__pagination__page.splide__pagination__page.is-active {
+  background: #f812c6;
 }
 
 

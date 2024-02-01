@@ -15,7 +15,7 @@ const Footer = () => {
                 harum quis vitae.
               </p>
             </div>
-            <div className="flex ml-24 gap-7">
+            <div className="flex gap-7">
               <img src="img" alt="TG" />
               <img src="img" alt="FB" />
               <img src="img" alt="TW" />

@@ -89,17 +89,18 @@ const Testimonials = () => {
 
   return (
     <section className="flex justify-center py-6 lg:py-20 text-black dark:text-neutral-200">
-      <div className="testimonials max-w-[1400px]">
-        <div className="lg:ml-10">
-          <p className="text-3xl md:text-5xl">What Clients Say about us</p>
-          <p>
-            We ask our clients to share their experience with us by posting on social media and here it goes...
+      <div className="testimonials w-full lg:max-w-[1400px]">
+        <div className="px-4 lg:ml-11">
+          <p className="text-3xl lg:text-4xl">What Clients Say about us</p>
+          <p className="text-md">
+            We ask our clients to share their experience with us by posting on
+            social media and here it goes...
           </p>
         </div>
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div className="flex flex-col gap-5 p-5 max-w-[470px]">
+              <div className="flex flex-col gap-5 md:p-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">
@@ -111,7 +112,7 @@ const Testimonials = () => {
                   </div>
                   <div className="flex flex-col justify-evenly">
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className="">{testimonial.expertise}</p>
+                    <p className="text-sm">{testimonial.expertise}</p>
                   </div>
                 </div>
               </div>
