@@ -48,13 +48,13 @@ const Features = () => {
           Featured Case Study
         </p>
         <p className="text-3xl lg:text-4xl p-2">Performance Highlights</p>
-        <p className="text-sm text-md w-full lg:w-1/2 text-center">
+        <p className="text-base w-full lg:w-1/2 text-center p-2">
           Here at E-wamp, we've worked with the best in the industry to produce
           thousands of dollars in return on ad spend. We do away with the the
           inefficiencies & formalities that plague most agencies.
         </p>
       </div>
-      <div className="container justify-center grid gap-3 lg:gap-5 grid-cols-2 lg:grid-cols-4">
+      <div className="container p-4 justify-center grid gap-3 lg:gap-5 grid-cols-2 lg:grid-cols-4">
         {FeaturesData.map((feature) => {
           return (
             <div
@@ -64,8 +64,10 @@ const Features = () => {
               <img src={feature.img} alt={`${feature.title} picturee`} />
               <p className="text-md lg:text-lg">{feature.title}</p>
               <div className="text-3xl lg:text-6xl text-fuchsia-600">
-                <AnimatedCounter value={feature.amount} />
-                {feature.sign}
+                <p className="text-4xl lg:text-6xl">
+                  <AnimatedCounter value={feature.amount} />
+                  {feature.sign}
+                </p>
               </div>
             </div>
           );

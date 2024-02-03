@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col gap-6 lg:gap-8">
             <div className="flex items-center gap-3">
               <p className="text-3xl font-mono">Jifar</p>
-              <p className="text-md">
+              <p className="text-base">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
                 veritatis ipsum. Fuga quo, quas dolore ducimus natus maxime est
                 tempore pariatur magni similique omnis ipsam. Similique tenetur

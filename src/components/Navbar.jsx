@@ -8,7 +8,9 @@ import { IoIosArrowDropleft } from "react-icons/io";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 1024px)').matches);
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 1024px)").matches
+  );
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
@@ -17,19 +19,27 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.matchMedia('(max-width: 1024px)').matches);
+      setIsMobile(window.matchMedia("(max-width: 1024px)").matches);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
+const handleScroll = () => {
+  const scrollPosition = window.scrollY;
+  console.log("Vertical Scroll Position:", scrollPosition);
+
+  // Your logic based on the scroll position goes here
+};
+
+window.addEventListener("scroll", handleScroll);
 
   return (
     <>
-      <nav className="bg-slate-800 min-h-20 flex items-center">
+      <nav className=" bg-slate-800 header min-h-20 flex items-center">
         <div className="container max-w-[1400px] mx-auto px-4 flex  justify-between">
           {/* <img src={} alt="" /> */}
           <p className="text-3xl text-blue-500">Jifar LOGO</p>

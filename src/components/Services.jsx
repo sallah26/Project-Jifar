@@ -118,10 +118,11 @@ const Services = () => {
             ))}
           </Splide>
         </div>
-        <div className="hidden lg:flex img-center">
+        <div className="hidden lg:flex img-center ">
           <img
             src={Images[currentSlideIndex]}
             alt={`${currentSlideIndex} Img from my`}
+            className=''
           />
           {/* <p className="text-6xl">{currentSlideIndex} This is image part????</p> */}
         </div>

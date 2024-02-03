@@ -90,9 +90,9 @@ const Testimonials = () => {
   return (
     <section className="flex justify-center py-6 lg:py-20 text-black dark:text-neutral-200">
       <div className="testimonials w-full lg:max-w-[1400px]">
-        <div className="px-4 lg:ml-11">
+        <div className="px-4 lg:ml-11  flex flex-col items-center justify-center">
           <p className="text-3xl lg:text-4xl">What Clients Say about us</p>
-          <p className="text-md">
+          <p className="text-md w-full lg:w-1/2 text-center">
             We ask our clients to share their experience with us by posting on
             social media and here it goes...
           </p>
@@ -100,7 +100,7 @@ const Testimonials = () => {
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div className="flex flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
+              <div className="flex duration-100 hover:border-b-2 border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">
