@@ -68,9 +68,12 @@ const Services = () => {
   const Images = [image0, image1, image2];
 
   return (
-    <section className="flex justify-center special-bg text-neutral-100">
-      <div className="flex w-full lg:max-w-[1340px] items-center justify-center">
-        <div className="w-full lg:w-6/12">
+    <section
+      id="services"
+      className="flex justify-center special-bg text-neutral-100"
+    >
+      <div className="flex w-full lg:max-w-[1470px]  py-5 lg:py-10 t">
+        <div className="w-full serv lg:w-6/12">
           <Splide
             options={{
               type: "loop",
@@ -122,7 +125,7 @@ const Services = () => {
           <img
             src={Images[currentSlideIndex]}
             alt={`${currentSlideIndex} Img from my`}
-            className=''
+            className=""
           />
           {/* <p className="text-6xl">{currentSlideIndex} This is image part????</p> */}
         </div>

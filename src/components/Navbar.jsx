@@ -56,12 +56,12 @@ window.addEventListener("scroll", handleScroll);
             </li>
 
             <li className="flex justify-center">
-              <a href="#about" className="text-sm text-white">
+              <a href="#services" className="text-sm text-white">
                 Case Studies
               </a>
             </li>
             <li className="flex justify-center">
-              <a href="#about" className="text-sm text-white">
+              <a href="#footer" className="text-sm text-white">
                 Contact
               </a>
             </li>

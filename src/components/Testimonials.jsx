@@ -100,7 +100,7 @@ const Testimonials = () => {
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div className="flex duration-100 hover:border-b-2 border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
+              <div className="flex duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">
