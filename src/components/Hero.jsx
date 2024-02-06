@@ -5,9 +5,9 @@ import hero_img from "../images/Hero_bg3.png"
 
 const Hero = () => {
   return (
-    <main className="py-8 ">
-      <section className="container min-h-screen  dark:text-neutral-200 text-neutral-800 pb-32 md:pb-40 lg:pb-2 mx-auto px-4 flex flex-col lg:flex-row max-w-[1400px]">
-        <div className="py-4 lg:py-20 w-full lg:w-1/2 lg:mt-6">
+    <main className="py-8 " id='hero'>
+      <section className="container min-h-screen  dark:text-neutral-200 text-neutral-800  mx-auto px-4 flex flex-col lg:flex-row max-w-[1400px]">
+        <div className="py-4 lg:py-20 w-full lg:w-1/2 ">
           <div className="flex flex-col  text-5xl font-bold md:text-6xl lg:font-bold">
             <p className="lg:pb-2">Smart Choices</p>
             <p className="">

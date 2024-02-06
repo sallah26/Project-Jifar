@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from "react-scroll";
 import AnimatedButton from './AnimatedButton';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import DarkModeToggle from './DarkMode';
@@ -47,35 +48,74 @@ const handlClick = () => {
 
   return (
     <>
-      <nav className=" bg-slate-800 header min-h-20 flex items-center">
-        <div className="container max-w-[1400px] mx-auto px-4 flex  justify-between">
+      <nav className="fixed z-50 top-0 w-full min-h-20 flex items-center bg-red-300">
+        <div className="container max-w-[1400px] mx-auto px-4 flex bg-red-600 justify-between">
           {/* <img src={} alt="" /> */}
-          <p className="text-3xl text-blue-500">Jifar LOGO</p>
+          <Link
+                href=""
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+               className="text-3xl text-blue-500">Jifar LOGO</Link>
           <ul className="hidden lg:flex gap-10  items-center">
             <li className="flex justify-center">
-              <a href="#login" className="text-sm text-white hover:bg-rounded ">
-                Services
-              </a>
+              <Link
+                href=""
+                className="text-sm text-white hover:bg-rounded "
+                to="performance"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                performance
+              </Link>
             </li>
             <li className="flex justify-center">
-              <a href="#about" className="text-sm text-white">
-                CRM
-              </a>
+              <Link
+                href=""
+                className="text-sm text-white hover:bg-rounded "
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                services
+              </Link>
             </li>
 
             <li className="flex justify-center">
-              <a href="#services" className="text-sm text-white">
-                Case Studies
-              </a>
+              <Link
+                href=""
+                className="text-sm text-white hover:bg-rounded "
+                to="testimonials"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                testimonials
+              </Link>
             </li>
             <li className="flex justify-center">
-              <a href="#footer" className="text-sm text-white">
-                Contact
-              </a>
+              <Link
+                href=""
+                className="text-sm text-white hover:bg-rounded "
+                to="footer"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                about
+              </Link>
             </li>
             <div className="hidden lg:flex">
               <button onClick={handlClick}>
-              <AnimatedButton name={"BOOK NOW"} />
+                <AnimatedButton name={"BOOK NOW"} />
               </button>
             </div>
           </ul>

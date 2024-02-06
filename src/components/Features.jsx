@@ -39,7 +39,10 @@ const Features = () => {
       }
     ];
   return (
-    <section className="py-8  lg:py-20 mx-auto text-neutral-800 dark:text-neutral-100 relative max-w-[1340px]">
+    <section
+      id="performance"
+      className="py-8  lg:py-20 mx-auto text-neutral-800 dark:text-neutral-100 relative max-w-[1340px]"
+    >
       <div className="absolute z-20 left-0 mt-6 lg:mt-24">
         {/* <img src={right_curv} className="h-auto" alt="right curv img" /> */}
       </div>

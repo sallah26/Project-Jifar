@@ -140,7 +140,9 @@ body {
   transition: opacity 3s ease-in-out;
   border-radius: 50px;
 }
-
+.bg{
+  background: #2C3333;
+}
 .glow-on-hover:active {
   color: #b64949
 }
