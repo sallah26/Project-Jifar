@@ -6,11 +6,12 @@ import DarkModeToggle from './DarkMode';
 import { IoIosArrowDropleft } from "react-icons/io";
 import Form from './Form';
 
-
-
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const [form, setForm] = useState(false);
+
+
+
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 1024px)").matches
   );
@@ -33,12 +34,24 @@ const Navbar = () => {
   }, []);
 const handleScroll = () => {
   const scrollPosition = window.scrollY;
-  console.log("Vertical Scroll Position:", scrollPosition);
+  // console.log("Vertical Scroll Position:", scrollPosition);
 
   // Your logic based on the scroll position goes here
 };
 
-window.addEventListener("scroll", handleScroll);
+const [isScrolled, setIsScrolled] = useState(false);
+ useEffect(() => {
+   const handleScroll = () => {
+     const scrollPosition = window.scrollY;
+     setIsScrolled(scrollPosition > 1000); // Set isScrolled to true after scrolling 500px
+   };
+
+   window.addEventListener("scroll", handleScroll);
+
+   return () => {
+     window.removeEventListener("scroll", handleScroll);
+   };
+ }, []);
 
 const handlClick = () => {
   setForm(true);
@@ -48,26 +61,41 @@ const handlClick = () => {
 
   return (
     <>
-      <nav className="fixed z-50 top-0 w-full min-h-20 flex items-center bg-red-300">
-        <div className="container max-w-[1400px] mx-auto px-4 flex bg-red-600 justify-between">
+      <header
+        className={`${
+          isScrolled
+            ? "fixed transform transition-transform duration-700 ease-in-out translate-y-0 opacity-100 "
+            : "translate-y-0 opacity-100 "
+        } z-50 top-0 w-full h-16 lg:h-20 flex items-center ${
+          isScrolled ? `special-bg2` : "bg-transparent opacity-0 "
+        }`}
+      >
+        <div className="container max-w-[1400px] mx-auto px-4 flex justify-between ">
           {/* <img src={} alt="" /> */}
           <Link
-                href=""
-                to="hero"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-               className="text-3xl text-blue-500">Jifar LOGO</Link>
-          <ul className="hidden lg:flex gap-10  items-center">
+            href=""
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={5}
+            duration={500}
+            className="text-3xl text-blue-500"
+          >
+            Jifar LOGO
+          </Link>
+          <ul
+            className={`hidden lg:flex gap-10  items-center  dark:text-neutral-100 ${
+              isScrolled ? "text-neutral-100" : "text-neutral-800"
+            }`}
+          >
             <li className="flex justify-center">
               <Link
                 href=""
-                className="text-sm text-white hover:bg-rounded "
+                className="text-sm hover:bg-rounded "
                 to="performance"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={5}
                 duration={500}
               >
                 performance
@@ -76,11 +104,11 @@ const handlClick = () => {
             <li className="flex justify-center">
               <Link
                 href=""
-                className="text-sm text-white hover:bg-rounded "
+                className="text-sm hover:bg-rounded "
                 to="services"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={5}
                 duration={500}
               >
                 services
@@ -90,11 +118,11 @@ const handlClick = () => {
             <li className="flex justify-center">
               <Link
                 href=""
-                className="text-sm text-white hover:bg-rounded "
+                className="text-sm hover:bg-rounded "
                 to="testimonials"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={5}
                 duration={500}
               >
                 testimonials
@@ -103,7 +131,7 @@ const handlClick = () => {
             <li className="flex justify-center">
               <Link
                 href=""
-                className="text-sm text-white hover:bg-rounded "
+                className="text-sm hover:bg-rounded "
                 to="footer"
                 spy={true}
                 smooth={true}
@@ -121,18 +149,21 @@ const handlClick = () => {
           </ul>
           {isMobile && (
             <div className="flex gap-3 items-center justify-center">
-              <div className="lg:hidden h-9 p-1 flex  items-center justify-center">
+              <div className="lg:hidden h-9 p-1 text-slate-800 dark:text-slate-100 flex items-center justify-center">
                 <DarkModeToggle />
               </div>
               <div className="lg:hidden flex items-center justify-center">
                 <button onClick={showSidebar}>
-                  <HiOutlineMenuAlt2 size={27} color="white" />
+                  <HiOutlineMenuAlt2
+                    size={27}
+                    className="text-slate-800 dark:text-slate-100 "
+                  />
                 </button>
               </div>
             </div>
           )}
         </div>
-      </nav>
+      </header>
       {/*Mobile sidebar  */}
       <div
         className={`sidebar ${

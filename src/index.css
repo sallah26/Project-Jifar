@@ -25,6 +25,7 @@ code {
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
 
+
 .serv .splide__pagination{
   display: flex;
   justify-content: start;
@@ -209,6 +210,11 @@ body {
 }
 
 
+.special-bg2{
+  background-color: rgba(43, 50, 59, 0.5);
+  backdrop-filter: blur(15px);
+}
+
 .special-bg{
-  background-color: #2b323b;
+  background-color: rgba(43, 50, 59);
 }
