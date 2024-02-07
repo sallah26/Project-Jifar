@@ -1,6 +1,7 @@
-import "./index.css"
 import logo from './logo.svg';
 import './App.css';
+import "react-datetime/css/react-datetime.css";
+import "./index.css"
 import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import DarkModeToggle from "./components/DarkMode";

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import DateTimePicker from "react-datetime";
+import "./styles/form.css"
+
 import { FaPhoneAlt, FaUserAlt, FaPassport } from "react-icons/fa";
 const Form = () => {
-  
+  const [selectedDate, setSelectedDate] = useState(new Date());
+const [isOpen, setIsOpen] = useState(true);
+  const handleChange = (date) => {
+    setSelectedDate(date);
+  };
 
   return (
     <section
@@ -75,13 +82,19 @@ const Form = () => {
                 </div>
               </div>
             </div>
-            <div className="second-col px-4">
+            <div className="second-col px-4 lg:w-3/4" >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam adipisci laudantium, minus magni distinctio vero
                 laboriosam veniam, maiores praesentium, saepe voluptatem illo
                 eligendi fugit! Porro perspiciatis eligendi amet unde tempore?
               </p>
+              <DateTimePicker
+                onChange={handleChange}
+                value={selectedDate}
+                open={isOpen}
+                onFocus={() => setIsOpen(false)} // Open the date picker when the input is focused
+              />
             </div>
           </div>
           <div className="flex justify-center">

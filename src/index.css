@@ -26,6 +26,17 @@ code {
 }
 
 
+.rdt .form-control{
+  display: hidden;
+}
+.rdtPicker{
+  position: relative;
+  max-width: 450px;
+  background-color: #857373;
+  border: 3px red solid;
+  /* display: ; */
+}
+
 .serv .splide__pagination{
   display: flex;
   justify-content: start;
