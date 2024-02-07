@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
+import Form from "./components/Form";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Features />
       <Services />
       <Testimonials />
+      <Form />
       <Footer />
     </div>
   );
