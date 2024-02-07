@@ -4,14 +4,9 @@ import AnimatedButton from './AnimatedButton';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import DarkModeToggle from './DarkMode';
 import { IoIosArrowDropleft } from "react-icons/io";
-import Form from './Form';
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
-  const [form, setForm] = useState(false);
-
-
-
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 1024px)").matches
   );
@@ -53,10 +48,7 @@ const [isScrolled, setIsScrolled] = useState(false);
    };
  }, []);
 
-const handlClick = () => {
-  setForm(true);
-  alert("Hello world");
-}
+
 
 
   return (
@@ -142,9 +134,7 @@ const handlClick = () => {
               </Link>
             </li>
             <div className="hidden lg:flex">
-              <button onClick={handlClick}>
                 <AnimatedButton name={"BOOK NOW"} />
-              </button>
             </div>
           </ul>
           {isMobile && (
@@ -201,15 +191,13 @@ const handlClick = () => {
               Contact
             </a>
           </li>
-          <div className="mt-3 flex justify-center w-full" onClick={handlClick}>
+          <div className="mt-3 flex justify-center w-full" >
             {/* <button> */}
             <AnimatedButton name={"BOOK NOW"} />
             {/* </button> */}
           </div>
         </ul>
       </div>
-      {/* Booking Form */}
-      {form && <Form />}
     </>
   );
 }
