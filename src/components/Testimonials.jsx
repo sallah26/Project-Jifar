@@ -88,7 +88,7 @@ const Testimonials = () => {
    }, [slidesPerPage, testimonialsData]);
 
   return (
-    <section className="flex special-bg justify-center py-6 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
+    <section className="flex justify-center py-6 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
       <div className="testimonials w-full lg:max-w-[1400px]">
         <div className="px-4 lg:ml-11  flex flex-col items-center justify-center">
           <p className="text-3xl lg:text-4xl">What Clients Say about us</p>

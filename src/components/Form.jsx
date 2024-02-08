@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DateTimePicker from "react-datetime";
 import "./styles/form.css"
-
 import { FaPhoneAlt, FaUserAlt, FaPassport } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -20,7 +19,6 @@ const [isOpen, setIsOpen] = useState(true);
       className="py-8  lg:py-20 mx-auto text-neutral-800 dark:text-neutral-100 relative max-w-[1340px]"
     >
       <div className="absolute z-20 left-0 mt-6 lg:mt-24">
-        {/* <img src={right_curv} className="h-auto" alt="right curv img" /> */}
       </div>
       <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
         <p className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700">

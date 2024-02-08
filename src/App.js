@@ -11,22 +11,24 @@ import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Form from "./components/Form";
-
+import Companies from './components/Companies ';
+// import Companies from "./components/Companies.jsx";
 
 function App() {
   return (
     <div className="app dark:bg-neutral-800">
-        <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-zinc-900 text-white dark:bg-fuchsia-600">
-        <DarkModeToggle color={"white"}/>
-        </div>
+      <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-zinc-900 text-white dark:bg-fuchsia-600">
+        <DarkModeToggle color={"white"} />
+      </div>
       <Navbar />
       <div className="mt-20">
-      <Hero />
+        <Hero />
       </div>
       <WhatWeDoFirst />
       <Features />
       <Services />
       <Testimonials />
+      <Companies />
       <Form />
       <Footer />
     </div>
