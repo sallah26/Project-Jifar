@@ -4,7 +4,7 @@ import "./styles/form.css"
 
 import { FaPhoneAlt, FaUserAlt, FaPassport } from "react-icons/fa";
 const Form = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(null);
 const [isOpen, setIsOpen] = useState(true);
   const handleChange = (date) => {
     setSelectedDate(date);
@@ -31,7 +31,7 @@ const [isOpen, setIsOpen] = useState(true);
       </div>
       <div>
         <form action="" className=" ">
-          <div className="flex flex-col  lg:flex-row items-center justify-center gap-3 lg:gap-4">
+          <div className="flex flex-col  lg:flex-row  justify-center gap-3 lg:gap-4">
             <div className="first-col w-full flex flex-col gap-4 px-4">
               <div className="flex flex-col gap-1">
                 <label htmlFor="name">Enter your name here</label>
@@ -82,19 +82,21 @@ const [isOpen, setIsOpen] = useState(true);
                 </div>
               </div>
             </div>
-            <div className="second-col px-4 lg:w-3/4" >
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam adipisci laudantium, minus magni distinctio vero
-                laboriosam veniam, maiores praesentium, saepe voluptatem illo
-                eligendi fugit! Porro perspiciatis eligendi amet unde tempore?
-              </p>
+            <div className="second-col px-4 py-2 lg:w-11/12 lg:ml-10">
+              <label htmlFor="datepci">
+                Pick suitable day for you to have a phone call.
+              </label>
               <DateTimePicker
+                id="datepci"
+                className="pt-2"
+                input={false}
                 onChange={handleChange}
                 value={selectedDate}
                 open={isOpen}
                 onFocus={() => setIsOpen(false)} // Open the date picker when the input is focused
               />
+              <p className="py-2">Your Selected Date is {selectedDate._d}</p>
+              {console.log(selectedDate._d)}
             </div>
           </div>
           <div className="flex justify-center">

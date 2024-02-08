@@ -15,19 +15,15 @@
 }
 .rdtPicker td:hover {
     background-color: rgb(105, 105, 105) !important;
-    /* cursor: pointer; */
 }
-
 .rdtPicker tfoot {
     border-top: 1px solid #979797;
 }
 .rdtCounters {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     padding: 5px;
     margin-top: 9px;
-    
     gap: 8px;
 }
 .rdtTime td:hover{
@@ -51,7 +47,6 @@ background-color: rgb(105, 105, 105) !important;
     padding-right: 5px;
 }
 .rdtCounter .rdtCount {
-    /* height: 70%; */
     font-size: 3rem;
     height: 40%;
 }
@@ -59,11 +54,14 @@ background-color: rgb(105, 105, 105) !important;
     font-size: 60px;
     line-height: 130px;
 }
-
 .rdtTime table thead tr .rdtSwitch{
     border-bottom: 1px rgb(161, 161, 161) solid;
 
 }.rdtTime table thead tr .rdtSwitch:hover {
     background-color: rgb(105, 105, 105) !important;
     cursor: pointer;    
+}
+
+.form-control{
+    display: hidden;
 }
