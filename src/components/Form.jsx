@@ -3,6 +3,10 @@ import DateTimePicker from "react-datetime";
 import "./styles/form.css"
 
 import { FaPhoneAlt, FaUserAlt, FaPassport } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
+
+
 const Form = () => {
   const [selectedDate, setSelectedDate] = useState(null);
 const [isOpen, setIsOpen] = useState(true);
@@ -75,10 +79,21 @@ const [isOpen, setIsOpen] = useState(true);
                     id="email"
                     placeholder="abdullah@gmail.com"
                   />
-                  <FaPassport
-                    size={18}
+                  <MdEmail
+                    size={24}
                     className="absolute right-3 text-gray-600 bottom-3"
                   />
+                </div>
+                <div className="flex gap-1 items-start mt-2">
+                  <input
+                    className="w-7 h-7 rounded-md"
+                    type="checkbox"
+                    id="check"
+                  />
+                  <p>
+                    I confir i fill correct and real information and i agree on
+                    privacy and policy issues with jifar construction!
+                  </p>
                 </div>
               </div>
             </div>
@@ -95,14 +110,17 @@ const [isOpen, setIsOpen] = useState(true);
                 open={isOpen}
                 onFocus={() => setIsOpen(false)} // Open the date picker when the input is focused
               />
-              <p className="py-2">Your Selected Date is {selectedDate._d}</p>
-              {console.log(selectedDate._d)}
+              <p className="mt-2">
+                {selectedDate && (
+                  <p>You have selected: {selectedDate.toLocaleString()}</p>
+                )}
+              </p>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-4 lg:mt-6">
             <button
               type="submit"
-              className="w-3/4 md:w-1/3 bg-gradient-to-br from-slate-700 to-gray-900 hover:-translate-y-1 border-[1px] border-slate-700 duration-150 rounded-full p-2 px-5 text-white mt-4"
+              className="w-3/4 md:w-1/3 bg-gradient-to-br dark:from-slate-600 from-slate-700 to-gray-900 hover:-translate-y-1 border-[1px] border-slate-700 duration-150 rounded-full p-2 px-5 text-white mt-4"
             >
               Book Now
             </button>
