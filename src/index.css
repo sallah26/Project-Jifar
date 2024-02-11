@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* splider */
+
 @import '@splidejs/react-splide/css';
 @import '@splidejs/react-splide/css/skyblue';
 @import '@splidejs/react-splide/css/sea-green';
@@ -37,12 +37,12 @@ code {
   /* display: ; */
 }
 
-.serv .splide__pagination{
+/* .serv .splide__pagination {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-left: 6%;
-  /* justify-items: start; */
-}
+  
+} */
 .serv .splide{
   /* margin-left:20px ; */
 }
