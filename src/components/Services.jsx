@@ -94,7 +94,7 @@ const Services = () => {
                     <div className="">
                       <AnimatedCounter value={56} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>
-                        this is nice
+                        this is nicee
                       </p>
                     </div>
 
