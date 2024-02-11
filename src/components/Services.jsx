@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
+import AOS from "aos";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Odometer from "odometer";
 import "odometer/themes/odometer-theme-default.css";
@@ -11,33 +12,17 @@ import AnimatedCounter from './AnimatedCounter ';
 
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+        once: false // Whether animation should happen only once
+    });
+}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
+
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-   const [counterValue, setCounterValue] = useState(0);
+  //  const [counterValue, setCounterValue] = useState(0);
 
-   const limit = 1100;
-
-  //  useEffect(() => {
-  //    const intervalId = setInterval(() => {
-  //      setCounterValue((prevValue) => {
-  //        const newValue = prevValue + 100;
-
-  //        // Check if the new value exceeds the limit
-  //        if (newValue >= limit) {
-  //          clearInterval(intervalId); // Stop the interval
-  //          return limit // Set the counter value to the limit
-  //        }
-  //        return newValue;
-  //      });
-  //    }, 100);
-
-  //    return () => {
-  //      clearInterval(intervalId);
-  //    };
-  //  }, [])
-
-
-
+  //  const limit = 1100;
 
   const servicesData = [
     {
@@ -90,12 +75,12 @@ const Services = () => {
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
                 <div className="flex flex-col gap-3 lg:gap-5 ">
-                  <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700">
+                  <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="50" >
                     Our services are
                   </p>
-                  <p className="text-3xl lg:text-4xl">{testimonial.title}</p>
-                  <p className="text-md">{testimonial.description1}</p>
-                  <p className="text-md">{testimonial.description2}</p>
+                  <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="150" >{testimonial.title}</p>
+                  <p className="text-md" data-aos="fade-right" data-aos-delay="300" >{testimonial.description1}</p>
+                  <p className="text-md" data-aos="fade-right" data-aos-delay="450" >{testimonial.description2}</p>
                   <div className="my-4 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
                     <div>
                       <AnimatedCounter value={23} />%
@@ -113,7 +98,8 @@ const Services = () => {
                       </p>
                     </div>
 
-                    {/* <AnimatedCounter value={95} /> */}
+                    {/* <AnimatedCounter valu .
+                    e={95} /> */}
                   </div>
                   {/* </div> */}
                 </div>

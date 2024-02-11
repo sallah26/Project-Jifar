@@ -35,18 +35,20 @@ const handleScroll = () => {
 };
 
 const [isScrolled, setIsScrolled] = useState(false);
- useEffect(() => {
-   const handleScroll = () => {
-     const scrollPosition = window.scrollY;
-     setIsScrolled(scrollPosition > 1000); // Set isScrolled to true after scrolling 500px
-   };
 
-   window.addEventListener("scroll", handleScroll);
+// COMMENTED NAVBAR SCROLL DETECTOR
+//  useEffect(() => {
+//    const handleScroll = () => {
+//      const scrollPosition = window.scrollY;
+//      setIsScrolled(scrollPosition > 900); // Set isScrolled to true after scrolling 500px
+//    };
 
-   return () => {
-     window.removeEventListener("scroll", handleScroll);
-   };
- }, []);
+//    window.addEventListener("scroll", handleScroll);
+
+//    return () => {
+//      window.removeEventListener("scroll", handleScroll);
+//    };
+//  }, []);
 
 
 
@@ -62,7 +64,7 @@ const [isScrolled, setIsScrolled] = useState(false);
           isScrolled ? `special-bg2` : "bg-transparent opacity-0 "
         }`}
       >
-        <div className="container max-w-[1400px] mx-auto px-4 flex justify-between ">
+        <div className="container max-w-[1400px] mx-auto pt-5 px-4 flex justify-between ">
           {/* <img src={} alt="" /> */}
           <Link
             href=""
@@ -75,6 +77,7 @@ const [isScrolled, setIsScrolled] = useState(false);
           >
             Jifar LOGO
           </Link>
+          <nav>
           <ul
             className={`hidden lg:flex gap-10  items-center  dark:text-neutral-100 ${
               isScrolled ? "text-neutral-100" : "text-neutral-800"
@@ -137,6 +140,7 @@ const [isScrolled, setIsScrolled] = useState(false);
                 <AnimatedButton name={"BOOK NOW"} />
             </div>
           </ul>
+          </nav>
           {isMobile && (
             <div className="flex gap-3 items-center justify-center">
               <div className="lg:hidden h-9 p-1 text-slate-800 dark:text-slate-100 flex items-center justify-center">
