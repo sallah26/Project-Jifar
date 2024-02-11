@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'aos/dist/aos.css';
 import "react-datetime/css/react-datetime.css";
 import "./index.css"
 import Navbar from './components/Navbar';

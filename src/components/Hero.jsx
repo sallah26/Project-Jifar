@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
 import AnimatedButton from './AnimatedButton';
 import man_image from "../images/3D-Man (1).png"
 import window_img from "../images/window.png"
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        offset: 200,
+        once: true // Whether animation should happen only once
+    });
+}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
+
+
   return (
     <main className="py-8 ">
       <section className="container min-h-screen  dark:text-neutral-200 text-neutral-800 mx-auto px-4 grid lg:grid-cols-2 max-w-[1400px]">
         <div className="py-4 lg:py-10 lg:mt-6">
-          <div className="flex flex-col text-4xl font-semibold md:text-6xl lg:font-bold">
+          <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col text-4xl font-semibold md:text-6xl lg:font-bold">
             <p className="lg:pb-2">Smart Choices</p>
             <p className="">
-              <span className=" lg:py-3 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-800">
+              <span className=" lg:py-3  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-800">
                 Strong Results
               </span>{" "}
               <span className="pt-2">Choose Us</span>
