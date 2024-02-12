@@ -13,6 +13,7 @@ import Features from "./components/Features";
 import Form from "./components/Form";
 import Companies from './components/Companies ';
 import logo_bg from "./images/bubble-39.png";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
 // import Companies from "./components/Companies.jsx";
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
       <Companies />
       <Form />
       <Footer />
+      {/* <div className='absolute left-10 bottom-10'> */}
+      
     </div>
   );
 }

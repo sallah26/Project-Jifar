@@ -14,7 +14,7 @@ const Hero = () => {
 
 
   return (
-    <main className="">
+    <main className="" id='hero'>
       <section className="container   dark:text-neutral-200 text-neutral-800 mx-auto px-4 flex flex-col lg:flex-row max-w-[1400px]">
         <div className="py-4 lg:py-10 flex flex-col gap-1 lg:mt-20 items-start w-full lg:w-5/6">
           {/* <div  className="flex flex-col text-4xl font-semibold md:text-6xl lg:font-bold"> */}

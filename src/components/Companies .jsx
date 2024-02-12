@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import "./styles/companies.css";
 import AnimatedCounter from "./AnimatedCounter ";
 import right_curv from "../images/icon-3.png";
 import logo_jifar1 from "../images/icon-3.png";
@@ -56,7 +57,7 @@ const CompaniesData = [
           Here at E-wamp, we've worked with the best in the
         </p>
       </div>
-      <div className="flex gap-5 justify-center">
+      <div className="flex flex-wrap gap-8 justify-center items-center mx-auto">
         {
             CompaniesData.map((company) => {
                 return (
@@ -64,9 +65,17 @@ const CompaniesData = [
                     data-aos="zoom-in" 
                     data-aos-delay={company.delay}
                     key={company.id}
-                    className="max-w-40 flex items-center py-6 lg:py-10 shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 hover:-translate-y-3 duration-300 rounded-2xl"
+                    className="card items-center shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 rounded-2xl"
                   >
-                    <p className="text-lg text-center p-3 lg:text-2xl">{company.name}</p>
+                     <div className="card-inner">
+                        <div className="card-front special-bg">
+                          <p className="text-lg text-center p-3 lg:text-xl">{company.name}</p>
+                        </div>
+                        <div className="card-back">
+                          <img src="your-image-url.jpg" className="rounded-2xl" alt="Card Image" />
+                        </div>
+                      </div>
+                    
                   </div>
                 );
             })
