@@ -32,7 +32,7 @@ function App() {
       <Services />
       <Testimonials />
       <Companies />
-      <Form />
+      {/* <Form /> */}
       <Footer />
       {/* <div className='absolute left-10 bottom-10'> */}
       
