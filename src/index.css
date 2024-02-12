@@ -37,12 +37,12 @@ code {
   /* display: ; */
 }
 
-/* .serv .splide__pagination {
+.serv .splide__pagination {
   display: flex;
   justify-content: flex-start;
   margin-left: 6%;
   
-} */
+}
 .serv .splide{
   /* margin-left:20px ; */
 }

@@ -14,6 +14,7 @@ import AnimatedCounter from './AnimatedCounter ';
 const Services = () => {
   useEffect(() => {
     AOS.init({
+      // offset: 50,
         once: false // Whether animation should happen only once
     });
 }, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
@@ -75,23 +76,23 @@ const Services = () => {
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
                 <div className="flex flex-col gap-3 lg:gap-5 ">
-                  <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="50" >
+                  <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-left" data-aos-delay="0" >
                     Our services are
                   </p>
-                  <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="150" >{testimonial.title}</p>
-                  <p className="text-md" data-aos="fade-right" data-aos-delay="300" >{testimonial.description1}</p>
-                  <p className="text-md" data-aos="fade-right" data-aos-delay="450" >{testimonial.description2}</p>
+                  <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="50" >{testimonial.title}</p>
+                  <p className="text-md" data-aos="fade-left" data-aos-delay="100" >{testimonial.description1}</p>
+                  <p className="text-md" data-aos="fade-right" data-aos-delay="150" >{testimonial.description2}</p>
                   <div className="my-4 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
-                    <div>
+                    <div data-aos="fade-left" data-aos-delay="350">
                       <AnimatedCounter value={23} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>
                         this is nice
                       </p>
                     </div>
-                    <div className=" border-l-2 border-neutral-500">
-                      <span className="h-5 my-line bg-red-500"></span>
+                    <div data-aos="fade-left" data-aos-delay="500" className=" border-l-2 border-neutral-500">
+                      <span  className="h-5 my-line bg-red-500"></span>
                     </div>
-                    <div className="">
+                    <div className="" data-aos="fade-left" data-aos-delay="650">
                       <AnimatedCounter value={56} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>
                         this is nicee
@@ -109,6 +110,8 @@ const Services = () => {
         </div>
         <div className="hidden lg:flex img-center ">
           <img
+            data-aos="fade-right" 
+            data-aos-delay="200"
             src={Images[currentSlideIndex]}
             alt={`${currentSlideIndex} Img from my`}
             className=""
