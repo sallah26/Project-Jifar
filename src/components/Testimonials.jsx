@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import AOS from "aos";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // import "@splidejs/react-splide/dist/styles/splide.css";
 import profile1 from "../images/profile_pics/testimonial-1.png"
@@ -8,11 +9,18 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init({
+      // offset: 50,
+        once: false // Whether animation should happen only once
+    });
+  })
   const testimonialsData = [
     {
       id: 0,
       name: "Selahadin Hamid",
       expertise: "Software Engineer",
+      delay: "200",
       profile: profile1,
       message:
         "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
@@ -21,6 +29,7 @@ const Testimonials = () => {
       id: 1,
       name: "Alice Johnson",
       expertise: "UX Designer",
+      delay: "400",
       profile: profile2,
       message:
         "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
@@ -29,6 +38,7 @@ const Testimonials = () => {
       id: 2,
       name: "Kian Rashidi",
       expertise: `Frontend Developer at Google`,
+      delay: "600",
       profile: profile3,
       message:
         "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
@@ -37,6 +47,7 @@ const Testimonials = () => {
       id: 3,
       name: "Kian Rashidi",
       expertise: `Frontend Developer at Google`,
+      delay: "800",
       profile: profile3,
       message:
         "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
@@ -45,6 +56,7 @@ const Testimonials = () => {
       id: 4,
       name: "Kian Rashidi",
       expertise: `Frontend Developer at Google`,
+      delay: "1000",
       profile: profile3,
       message:
         "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
@@ -91,8 +103,8 @@ const Testimonials = () => {
     <section className="flex justify-center py-6 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
       <div className="testimonials w-full lg:max-w-[1400px]">
         <div className="px-4 lg:ml-11  flex flex-col items-center justify-center">
-          <p className="text-3xl lg:text-4xl">What Clients Say about us</p>
-          <p className="text-md w-full lg:w-1/2 text-center">
+          <p data-aos="fade-left" data-aos-delay="200" className="text-3xl lg:text-4xl">What Clients Say about us</p>
+          <p data-aos="fade-left" data-aos-delay="350" className="text-md w-full lg:w-1/2 text-center">
             We ask our clients to share their experience with us by posting on
             social media and here it goes...
           </p>
@@ -100,7 +112,7 @@ const Testimonials = () => {
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div className="flex duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
+              <div data-aos="fade-left" data-aos-delay={testimonial.delay} className="flex duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">
@@ -122,6 +134,6 @@ const Testimonials = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Testimonials;
