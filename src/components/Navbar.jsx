@@ -14,10 +14,9 @@ const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     AOS.init({
-        once: false // Whether animation should happen only once
+        once: false 
     });
-}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
-
+}, []); 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
@@ -27,9 +26,9 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    // Check the scroll position and update isSticky state
+    
     const scrollPosition = window.scrollY;
-    const stickyThreshold = 600; // Adjust as needed based on your design
+    const stickyThreshold = 200; 
     setIsSticky(scrollPosition > stickyThreshold);
   };
 
@@ -126,7 +125,7 @@ const Navbar = () => {
         </div>
 
         {/* Small devices */}
-        {/* Sidebar for small devices */}
+        {/* Sidebar for small devices */ }
         <article className={`lg:hidden fixed z-50 top-0 -left-1/2 h-screen w-1/2 bg-zinc-300 dark:text-white dark:bg-neutral-900 py-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='flex flex-col'>
             <div className="flex justify-start mt-3">
