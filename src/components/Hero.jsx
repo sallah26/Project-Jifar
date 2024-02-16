@@ -29,14 +29,14 @@ const Hero = () => {
             ROI Via Paid Advertisement. Stop wasting time and money on faulty
             and ineffective ad campaigns. It's time to make your ad-budget
             count, scale your business and blow up your sales.
+            to make sales a
           </p>
-          <div className="mt-2" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50" >
-            
+          <div className="mt-2" data-aos="fade-up" data-aos-delay="1000" >
             <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
           </div>
         </div>
         <div className="p-6 lg:p-16" >
-          <img src={hero_bg} alt="hero image" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor-placement="top-center" daa-aos-duration="5000"/>
+          <img src={hero_bg} data-aos="fade-up" data-aos-delay="1000"  alt="hero image" />
           
         </div>
       </section>
