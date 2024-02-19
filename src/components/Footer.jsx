@@ -21,23 +21,23 @@ const Footer = () => {
   return (
     <footer id='footer' className="relative special-bg text-md md:text-md text-neutral-200 ">
       <div className='flex flex-col gap-4 items-center py-4'>
-        <img src={jifar_logo} alt="jifar logo" />
+        <img src={jifar_logo} alt="jifar logo" className='w-full lg:w-80 -pb-2'/>
         <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold '>Jifar Agency</p>
         <p className="">JifarHomeS.com | jifar@homes.com</p>
         <div className='flex gap-3'>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-sky-600 duration-150'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1DA1F2] duration-150'>
             <FaTwitter size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-blue-800 duration-150'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1877F2] duration-150'>
             <FaFacebookF size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-700 duration-150'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#bc2a8d] duration-150'>
             <FaInstagram size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-500 duration-150'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#FF0000] duration-150'>
             <FaYoutube size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-800 duration-150'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#E60023] duration-150'>
             <FaPinterestP size={22}/>
           </a>
         </div>

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos';
-import "./styles/spher.css";
 import AnimatedButton from './AnimatedButton';
 import man_image from "../images/3D-Man (1).png"
 import window_img from "../images/window.png"
@@ -15,7 +14,7 @@ const Hero = () => {
 
   return (
     <main className="" id='hero'>
-      <div className="animated-spher"></div>
+      
       <section className="container   dark:text-neutral-200 text-neutral-800 mx-auto px-4 flex flex-col lg:flex-row max-w-[1400px]">
         <div className="py-4 lg:py-10 flex flex-col gap-2 lg:gap-1 lg:mt-20 items-start w-full lg:w-5/6">
             <p data-aos="fade-up" data-aos-delay="700"  data-aos-offset="50" daa-aos-duration="400" className="text-5xl font-semibold md:text-6xl lg:font-bold">Smart Choices</p>
