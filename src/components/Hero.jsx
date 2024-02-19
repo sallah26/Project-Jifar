@@ -18,7 +18,7 @@ const Hero = () => {
       <section className="container   dark:text-neutral-200 text-neutral-800 mx-auto px-4 flex flex-col lg:flex-row max-w-[1400px]">
         <div className="py-4 lg:py-10 flex flex-col gap-2 lg:gap-1 lg:mt-20 items-start w-full lg:w-5/6">
             <p data-aos="fade-up" data-aos-delay="700"  data-aos-offset="50" daa-aos-duration="400" className="text-5xl font-semibold md:text-6xl lg:font-bold">Smart Choices</p>
-            <p data-aos="fade-up" data-aos-delay="850" className=" text-5xl font-semibold md:text-6xl lg:font-bold  text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-800">
+            <p data-aos="fade-up" data-aos-delay="850" className=" text-5xl font-semibold md:text-6xl lg:font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#ED7D31] to-[#a34f17]">
                 Strong Results
             </p>
               <p data-aos="fade-up" data-aos-delay="1000" className="text-5xl font-semibold md:text-6xl lg:font-bold">Choose Us</p>

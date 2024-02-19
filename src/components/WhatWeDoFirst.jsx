@@ -20,7 +20,7 @@ const WhatWeDoFirst = () => {
           <p className="text-md my-1 font-bold " data-aos="fade-right" data-aos-delay="50" >
             What we offer | Ads, Just Ads | for Interior Designers
           </p>
-          <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="100" >
+          <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17" data-aos="fade-right" data-aos-delay="100" >
             PAID ADVERTISING
           </h1>
          <p className="text-md mt-8 text-neutral-200" data-aos="fade-right" data-aos-delay="150" >
