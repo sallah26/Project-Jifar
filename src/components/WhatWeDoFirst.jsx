@@ -11,7 +11,7 @@ const WhatWeDoFirst = () => {
     });
 }, []); 
   return (
-    <section className="relative bg-stone-800 text-neutral-100 special-bg ">
+    <section id='about-us' className="relative bg-stone-800 text-neutral-100 special-bg ">
       <div className="absolute left-0 mt-6 lg:mt-24 z-10!important">
         <img src={right_curv} className="h-auto" alt="right curv img" />
       </div>

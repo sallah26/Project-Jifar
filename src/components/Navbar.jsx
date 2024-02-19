@@ -7,6 +7,7 @@ import AnimatedButton from './AnimatedButton';
 import DarkModeToggle from './DarkMode';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 import { GrCommand } from "react-icons/gr";
+import jifar_logo from "../images/jifar_logo.svg";
 
 
 const Navbar = () => {
@@ -44,15 +45,16 @@ const Navbar = () => {
 
   return (
     <nav className={` ${isSticky ? 'special-bg2 top-0 text-slate-200' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
-      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-5">
+      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-1">
         <div data-aos="fade-down" data-aos-delay="200" className="cursor-pointer z-30 " onClick={scrollToTop}>
-          Your Logo
+          <img src={jifar_logo} alt="jifar logo" className='w-56 h-20'/>
         </div>
         {/* Large devices */}
         <div className="hidden z-30 lg:flex items-center space-x-7 text-md">
           <ScrollLink
             to="services"
             href=''
+          
             spy={true}
             smooth={true}
             offset={-70}
@@ -64,7 +66,8 @@ const Navbar = () => {
             Services
           </ScrollLink>
           <ScrollLink
-            to="about"
+            to="about-us"
+            href=''
             spy={true}
             smooth={true}
             offset={-70}
@@ -73,10 +76,11 @@ const Navbar = () => {
             data-aos="fade-down" 
             data-aos-delay="300"
           >
-            About
+            About us
           </ScrollLink>
           <ScrollLink
             to="testimonials"
+            href=''
             spy={true}
             smooth={true}
             offset={-70}
@@ -89,6 +93,7 @@ const Navbar = () => {
           </ScrollLink>
           <ScrollLink
             to="contact"
+            href=''
             spy={true}
             smooth={true}
             offset={-70}
@@ -101,6 +106,7 @@ const Navbar = () => {
           </ScrollLink>
           <ScrollLink
             to="footer"
+            href=''
             spy={true}
             smooth={true}
             offset={-70}
@@ -142,6 +148,7 @@ const Navbar = () => {
                 <li className="w-full border-b-2  hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400  hover:cursor-pointer ">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -156,6 +163,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -170,6 +178,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -184,6 +193,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -198,6 +208,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -212,6 +223,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -226,6 +238,7 @@ const Navbar = () => {
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
                     to="services"
+                    href=''
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -240,6 +253,7 @@ const Navbar = () => {
               </ul>
               <ScrollLink
                 to="services"
+                href=''
                 spy={true}
                 smooth={true}
                 offset={-7}
