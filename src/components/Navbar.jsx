@@ -92,7 +92,7 @@ const Navbar = () => {
             Testimonials
           </ScrollLink>
           <ScrollLink
-            to="contact"
+            to="footer"
             href=''
             spy={true}
             smooth={true}

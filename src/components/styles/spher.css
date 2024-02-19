@@ -1,0 +1,20 @@
+.animated-sphere {
+    width: 60px; /* Adjust for desired radius */
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50%, #007bff, #fff); /* Customize colors */
+    position: absolute; /* Ensures animation within specific area */
+    top: 50%; /* Center vertically within hero section */
+    left: 0; /* Start at the left edge */
+    animation: moveSphere 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes moveSphere {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100% - 60px)); /* Adjust for section width */
+    }
+  }
+  
