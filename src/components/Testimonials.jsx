@@ -102,7 +102,7 @@ const Testimonials = () => {
   return (
     <section className="flex justify-center py-6 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
       <div className="testimonials w-full lg:max-w-[1400px]">
-        <div className="px-4 lg:ml-11  flex flex-col items-center justify-center">
+        <div className="p-6 lg:ml-11  flex flex-col gap-2  items-center justify-center">
           <p data-aos="fade-left" data-aos-delay="200" className="text-3xl lg:text-4xl">What Clients Say about us</p>
           <p data-aos="fade-left" data-aos-delay="350" className="text-md w-full lg:w-1/2 text-center">
             We ask our clients to share their experience with us by posting on
@@ -112,7 +112,7 @@ const Testimonials = () => {
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div data-aos="fade-left" data-aos-delay={testimonial.delay} className="flex duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 md:pb-4 w-full md:max-w-[470px]">
+              <div data-aos="fade-left" data-aos-delay={testimonial.delay} className="flex testi duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 p-2 md:pb-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">

@@ -58,7 +58,7 @@ const Features = () => {
         {/* <img src={right_curv} className="h-auto" alt="right curv img" /> */}
       </div>
       <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
-        <p className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+        <p className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
           Featured Case Study
         </p>
         <p className="text-3xl lg:text-4xl p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">Performance Highlights</p>

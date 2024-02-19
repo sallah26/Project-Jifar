@@ -43,7 +43,9 @@ code {
 .splide{
   padding: 0 2em;
 }
-
+.testi .splide__pagination{
+  margin: -50px;
+}
 .serv .splide__pagination {
   position: relative;
   display: flex;

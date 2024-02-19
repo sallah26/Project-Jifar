@@ -49,7 +49,7 @@ const CompaniesData = [
     >
      
       <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
-        <p data-aos="zoom-in" data-aos-delay="250" className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700">
+        <p data-aos="zoom-in" data-aos-delay="250" className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]">
           Top Clients
         </p>
         <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2">Companies That Trust Us</p>
