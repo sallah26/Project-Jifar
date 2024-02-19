@@ -1,107 +1,56 @@
 import React, { useEffect } from 'react'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import AOS from "aos";
-import { FaArrowUp, FaInstagram } from "react-icons/fa";
+import jifar_logo from "../images/jifar_logo.svg"
+import { FaArrowUp, FaInstagram, FaPinterest, FaPinterestP, FaYoutube } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+
+
 import { IoArrowUpSharp } from "react-icons/io5";
 
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-        once: false // Whether animation should happen only once
+        once: false
     });
-}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
+}, []);
 
   return (
-    <footer id='footer' className="relative special-bg text-sm md:text-md text-neutral-100 flex justify-center">
-      <div className="max-w-[1340px] p-5 lg:p-1 flex flex-col lg:flex-row justify-between items-center py-7 lg:py-14 ">
-        <div className="lg:w-2/5">
-          <div className="flex flex-col gap-6 lg:gap-8">
-            <div className="flex items-center gap-3">
-              <p data-aos="fade-up" data-aos-delay="100" className="text-3xl font-mono">Jifar</p>
-              <p data-aos="fade-up" data-aos-delay="300" className="text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-                veritatis ipsum. Fuga quo, quas dolore ducimus natus maxime est
-                tempore pariatur magni similique omnis ipsam. Similique tenetur
-                harum quis vitae.
-              </p>
-            </div>
-            <div data-aos="fade-left" data-aos-delay="200" className="flex gap-7">
-              <FaInstagram  size={25} className=' hover:-translate-y-1 duration-150 hover:cursor-pointer'/>
-              <FaTelegram size={25} className=' hover:-translate-y-1 duration-150 hover:cursor-pointer'/>
-              <FaFacebookF size={25} className=' hover:-translate-y-1 duration-150 hover:cursor-pointer'/>
-              <FaTwitter size={25} className=' hover:-translate-y-1 duration-150 hover:cursor-pointer'/>
-              <FaTiktok size={25} className=' hover:-translate-y-1 duration-150 hover:cursor-pointer'/>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full mb-10 lg:mb-14 lg:w-1/3 mt-10 lg:mt-1 flex justify-between">
-          {/* <div className=""> */}
-          <ul className="gap-2">
-            <li data-aos="fade-up" data-aos-delay="50" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Ethiopia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="100" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Africa</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="150" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Sudan</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="200" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Somalia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="250" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">China</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="300" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Eriteria</a>
-            </li>
-          </ul>
-          <ul className="">
-            <li data-aos="fade-up" data-aos-delay="50" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Ethiopia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="100" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Africa</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="150" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Sudan</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="200" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Somalia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="250" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Somalia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="300" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Somalia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="350" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">China</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="400" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Eriteria</a>
-            </li>
-          </ul>
-          <ul className="gap-2">
-            <li data-aos="fade-up" data-aos-delay="50" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Ethiopia</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="100" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Africa</a>
-            </li>
-            <li data-aos="fade-up" data-aos-delay="150" className="pt-1 hover:translate-x-1 duration-150 hover:text-neutral-400 ">
-              <a href="#">Sudan</a>
-            </li>
-          </ul>
-          {/* </div> */}
+    <footer id='footer' className="relative special-bg text-md md:text-md text-neutral-200 ">
+      <div className='flex flex-col gap-4 items-center py-4'>
+        <img src={jifar_logo} alt="jifar logo" />
+        <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold '>Jifar Agency</p>
+        <p className="">JifarHomeS.com | jifar@homes.com</p>
+        <div className='flex gap-3'>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-sky-600 duration-150'>
+            <FaTwitter size={22}/>
+          </a>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-blue-800 duration-150'>
+            <FaFacebookF size={22}/>
+          </a>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-700 duration-150'>
+            <FaInstagram size={22}/>
+          </a>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-500 duration-150'>
+            <FaYoutube size={22}/>
+          </a>
+          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-red-800 duration-150'>
+            <FaPinterestP size={22}/>
+          </a>
         </div>
       </div>
-      <p className="absolute  bottom-3  ">©Copyright Jifar-constr | 2024</p>
+        <p className="text-center p-3 bg-slate-900 font-bold text-sm mt-5">©COPYRIGHT 2023 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
+      
+      
+      
+      
+      
+      
+      
+      
       <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-zinc-900 text-white dark:bg-fuchsia-600 bg-opacity-35">
         <ScrollLink
             to="hero"

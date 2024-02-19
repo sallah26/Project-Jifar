@@ -28,27 +28,33 @@ const Services = () => {
   const servicesData = [
     {
       id: 0,
-      title: "Wedding Planner's Success Story",
+      title: "MASTERY DEMANDS FOCUS SO....",
       description1:
-        "Challenge: Lovely Events Wedding Planning, a local wedding planner, was looking to expand its clientele beyond word-of-mouth referrals. They wanted to reach a wider audience to increase bookings.",
+        "We don't offer any other services except for paid advertising on Meta...",
       description2:
-        "Solution: We crafted a targeted digital advertising campaign for Lovely Events, highlighting their unique wedding planning services. We utilized platforms like Facebook and Instagram to showcase their beautiful weddings, expert team, and client testimonials.",
+          `⦁	No SOCIAL MEDIA MANAGEMENT
+            ⦁	​No INSTAGRAM GROWTH
+            ⦁	No WEB DESIGN
+            ⦁	No PR SERVICE
+            ⦁	​No CONTENT CREATION
+            ⦁	​No EMAIL MARKETING
+            ⦁	No SEO`,
     },
     {
       id: 3,
-      title: "This part will talk about ?",
+      title: "Interior design leads using the power of Meta ads.",
       description1:
-        "Challenge: Lovely Events Wedding Planning, a local wedding planner, was looking to expand its clientele beyond word-of-mouth referrals. They wanted to reach a wider audience to increase bookings.",
+        "We help home interior design business owners escape the competition on YouTube & Google and instead leverage the power of Meta ads. It's a powerful, dynamic advertising platform that offers huge opportunity for business owners.",
       description2:
-        "Solution: We crafted a targeted digital advertising campaign for Lovely Events, highlighting their unique wedding planning services. We utilized platforms like Facebook and Instagram to showcase their beautiful weddings, expert team, and client testimonials.",
+        "",
     },
     {
       id: 2,
-      title: "Jifar construction is my bes?",
+      title: "We only work with interior design businesses. We only do Meta ads.",
       description1:
-        "Challenge: Lovely Events Wedding Planning, a local wedding planner, was looking to expand its clientele beyond word-of-mouth referrals. They wanted to reach a wider audience to increase bookings.",
+        "We are a specialist interior design leads,S company that works only with interior design businesses. We do not work with any other industry. We use Meta ads to locate and attract motivated, qualified ‘ready to buy’ customers.",
       description2:
-        "Solution: We crafted a targeted digital advertising campaign for Lovely Events, highlighting their unique wedding planning services. We utilized platforms like Facebook and Instagram to showcase their beautiful weddings, expert team, and client testimonials.",
+        "",
     },
   ];
   const Images = [image0, image1, image2];
@@ -82,7 +88,7 @@ const Services = () => {
                   <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="50" >{testimonial.title}</p>
                   <p className="text-md" data-aos="fade-left" data-aos-delay="100" >{testimonial.description1}</p>
                   <p className="text-md" data-aos="fade-right" data-aos-delay="150" >{testimonial.description2}</p>
-                  <div className="my-4 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
+                  <div className="my-2 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
                     <div data-aos="fade-left" data-aos-delay="350">
                       <AnimatedCounter value={23} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>

@@ -33,6 +33,7 @@ function App() {
       <Testimonials />
       <Companies />
       {/* <Form /> */}
+      <p className='bg-slate-500'>hello world</p>
       <Footer />
       {/* <div className='absolute left-10 bottom-10'> */}
       

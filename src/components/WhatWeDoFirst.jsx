@@ -2,47 +2,41 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import meta_image from "../images/logo-Meta.png";
 import right_curv from "../images/bubble-42.png";
-import line from "../images/line-9.png";
-
-
 
 const WhatWeDoFirst = () => {
   useEffect(() => {
     AOS.init({
-        once: false // Whether animation should happen only once
+        once: false, 
+        offset: 20
     });
-}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
-
+}, []); 
   return (
     <section className="relative bg-stone-800 text-neutral-100 special-bg ">
-      <div className="absolute left-0 mt-6 lg:mt-24">
+      <div className="absolute left-0 mt-6 lg:mt-24 z-10!important">
         <img src={right_curv} className="h-auto" alt="right curv img" />
       </div>
-      <div className="container p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
-        <div className="flex p-2 flex-col gap-1 w-full">
-          <p className="text-md font-bold " data-aos="fade-right" data-aos-delay="100" >
-            What we offer | Ads, Just Ads | Only For Event Planners
+      <div className="z-30 container p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
+        <div className="flex py-2 flex-col w-full">
+          <p className="text-md my-1 font-bold " data-aos="fade-right" data-aos-delay="50" >
+            What we offer | Ads, Just Ads | for Interior Designers
           </p>
-          <h1 className="  text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="250" >
+          <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="100" >
             PAID ADVERTISING
           </h1>
-          <p className="text-md mt-8 text-neutral-200" data-aos="fade-right" data-aos-delay="400" >
-            We do one thing - we just do it with a monastic focus and better
-            than anyone else.If you want an agency that offers a full service
-            solution of everything that won’t move the needle forward, we’re not
-            for you.
+         <p className="text-md mt-8 text-neutral-200" data-aos="fade-right" data-aos-delay="150" >
+          We specialize in one thing: running ads. With unwavering focus, we excel at it like no other. 
+          If you're seeking an agency that delivers results by cutting through the noise, we're your perfect fit. Say goodbye to 
+          distractions and hello to impactful advertising that drives real growth.
+          
           </p>
-          <p className="text-md mt-5" data-aos="fade-right" data-aos-delay="550" >
-            If you want an agency where with two clicks, you can get a clear
-            breakdown of how much was spent, how much was made & what your net
-            profit was - we’re for you.
+          <p className="text-md mt-5" data-aos="fade-right" data-aos-delay="200" >
+          If you're seeking an agency where you can easily track your expenses, revenue, 
+          and net profit with just a couple of clicks, then we're the right choice for you.
           </p>
-          <h2 className="text-2xl font-semibold mt-8"  data-aos="fade-right" data-aos-delay="700">
-            MASTERY DEMANDS FOCUS SO....
-          </h2>
+        
         </div>
         <div style={{}} className=" w-full ">
-          <img src={meta_image} alt=" Meta-imagee" data-aos="fade-left" data-aos-delay="400"  className="" />
+          <img src={meta_image} alt=" Meta-imagee" data-aos="fade-left" data-aos-delay="300"  className="" />
         </div>
       </div>
     </section>
