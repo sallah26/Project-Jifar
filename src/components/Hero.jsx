@@ -4,7 +4,7 @@ import AnimatedButton from './AnimatedButton';
 import man_image from "../images/3D-Man (1).png"
 import window_img from "../images/window.png"
 import hero_bg from "../images/Hero_bg3.png";
-import hero_img from "../images//hero-img.png"
+import hero_img from "../images/hero image form ps.png"
 
 
 const Hero = () => {
