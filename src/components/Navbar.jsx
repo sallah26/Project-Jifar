@@ -8,7 +8,10 @@ import DarkModeToggle from './DarkMode';
 import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 import { GrCommand } from "react-icons/gr";
 import jifar_logo from "../images/jifar_logo.svg";
-
+import { MdOutlineElectricalServices } from "react-icons/md";
+import { IoHome } from "react-icons/io5";
+import { GrContact } from "react-icons/gr";
+import { FaUsersGear } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -140,7 +143,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="absolute top-6 right-2 opacity-70"
               >
-                <IoIosArrowDropright size={30} />
+                <IoIosArrowDropright size={30} color='#ED7D31' />
               </button>
             </div>
             <div>
@@ -156,7 +159,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex gap-2 hover:translate-x-3 duration-150 items-center "
                     onClick={() => { toggleNavbar(); }}
                       >
-                        <GrCommand size={20}/>
+                        <MdOutlineElectricalServices size={20}/>
                     Services
                   </ScrollLink>
                 </li>
@@ -171,7 +174,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
                     onClick={() => { toggleNavbar(); }}
                       >
-                        <GrCommand size={20}/>
+                        <IoHome size={20}/>
                         About us
                   </ScrollLink>
                 </li>
@@ -186,7 +189,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
                     onClick={() => { toggleNavbar(); }}
                       >
-                        <GrCommand size={20}/>
+                        <FaUsersGear size={20}/>
                         Testimonials
                   </ScrollLink>
                 </li>
@@ -201,7 +204,7 @@ const Navbar = () => {
                     className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
                     onClick={() => { toggleNavbar(); }}
                       >
-                        <GrCommand size={20}/>
+                        <GrContact size={20}/>
                         Contact
                   </ScrollLink>
                 </li>

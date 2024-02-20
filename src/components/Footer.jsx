@@ -42,7 +42,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-        <p className="text-center p-3 bg-slate-900 font-bold text-sm mt-5">©COPYRIGHT 2023 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
+        <p className="text-center p-3 bg-slate-900 font-semibold text-sm mt-5">©COPYRIGHT 2023 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
       
       
       
@@ -61,8 +61,8 @@ const Footer = () => {
             className=""
             
               >
-                <div className='pb-1 pt-2 px-1 hover:cursor-pointer'>
-                  <IoArrowUpSharp size={45}  className='animate-bounce'/>
+                <div className='pb-0.5 pt-1 px-0.5 hover:cursor-pointer'>
+                  <IoArrowUpSharp size={35}  className='animate-bounce'/>
                 </div>
           </ScrollLink>
       </div>
