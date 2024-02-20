@@ -42,15 +42,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-        <p className="text-center p-3 bg-slate-900 font-semibold text-sm mt-5">©COPYRIGHT 2023 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
-      
-      
-      
-      
-      
-      
-      
-      
+        <p className="text-center p-3 bg-slate-900 font-semibold text-sm mt-5">©COPYRIGHT 2024 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
       <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-[#ED7D31] text-white  ">
         <ScrollLink
             to="hero"
