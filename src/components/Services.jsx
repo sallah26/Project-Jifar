@@ -9,30 +9,28 @@ import image1 from "../images/case-study-5.png";
 import image2 from "../images/case-study-6.png";
 import AnimatedCounter from './AnimatedCounter ';
 import { MdOutlineVerifiedUser } from "react-icons/md";
-
+import { IoArrowUpSharp } from 'react-icons/io5';
+import { FaAnglesRight } from "react-icons/fa6";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 const Services = () => {
   useEffect(() => {
     AOS.init({
       // offset: 50,
-        once: false // Whether animation should happen only once
+        once: false 
     });
-}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
-
+}, []); 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  //  const [counterValue, setCounterValue] = useState(0);
-
-  //  const limit = 1100;
-
+ 
   const servicesData = [
     {
       id: 0,
-      title: "MASTERY DEMANDS FOCUS SO....",
+      title: "Mastery demands focus so...",
       description1:
         "We don't offer any other services except for paid advertising on Meta...",
       description2:
-          ["No SOCIAL MEDIA MANAGEMENT",	"​No INSTAGRAM GROWTH",	"No WEB DESIGN",	"No PR SERVICE", "​No CONTENT CREATION",	"​No EMAIL MARKETING",	"No SEO]"],
+      [  "No social media management",  "No instagram growth",  "No web design",  "No PR service",  "No content creation",  "No email marketing",  "No seo"]      
     },
           {
       id: 3,
@@ -59,7 +57,14 @@ const Services = () => {
       className="flex justify-center special-bg text-neutral-100"
     >
       <div className="flex w-full lg:max-w-[1470px]  py-5 lg:py-10 t">
-        <div className="w-full serv lg:w-6/12">
+        <div className="w-full lg:mt-16 serv lg:w-6/12 relative" >
+                
+                <div className="absolute z-50 flex flex-col gap-1 top-1/4 rotate-90  ml-5 right-0  rounded-full bg-[#ED7D31] text-white  ">
+                <div className='pb-1 pt-2 px-1 hover:cursor-move'>
+                  <MdKeyboardDoubleArrowUp size={40}  className='animate-bounce'/>
+                </div>
+                </div>
+               
           <Splide
             options={{
               type: "loop",
@@ -75,7 +80,7 @@ const Services = () => {
           >
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
-                <div className="flex flex-col gap-3 lg:gap-5 ">
+                <div className="flex flex-col gap-3 ">
                   <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-left" data-aos-delay="0" >
                     Our services are
                   </p>
@@ -91,28 +96,7 @@ const Services = () => {
                          })}
                   </div> : <div>
                           </div>}
-                  {/* <p className="text-md" data-aos="fade-right" data-aos-delay="150" >{testimonial.description2}</p> */}
-                  <div className="my-2 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-[#ED7D31] odos">
-                    <div data-aos="fade-left" data-aos-delay="350">
-                      <AnimatedCounter value={23} />%
-                      <p className="text-white " style={{ fontSize: "20px" }}>
-                        this is nice
-                      </p>
-                    </div>
-                    <div data-aos="fade-left" data-aos-delay="200" className=" border-l-2 border-neutral-500">
-                      <span  className="h-5 my-line bg-red-500"></span>
-                    </div>
-                    <div className="" data-aos="fade-left" data-aos-delay="350">
-                      <AnimatedCounter value={56} />%
-                      <p className="text-white " style={{ fontSize: "20px" }}>
-                        this is nicee
-                      </p>
-                    </div>
-
-                    {/* <AnimatedCounter valu .
-                    e={95} /> */}
-                  </div>
-                  {/* </div> */}
+                
                 </div>
               </SplideSlide>
             ))}
