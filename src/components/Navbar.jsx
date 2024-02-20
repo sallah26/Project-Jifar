@@ -45,9 +45,9 @@ const Navbar = () => {
 
   return (
     <nav className={` ${isSticky ? 'special-bg2 top-0 text-slate-200' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
-      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-1">
+      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-1 pb-9 lg:pb-2">
         <div data-aos="fade-down" data-aos-delay="200" className="cursor-pointer z-30 " onClick={scrollToTop}>
-          <img src={jifar_logo} alt="jifar logo" className='w-56 h-20'/>
+          <img src={jifar_logo} alt="jifar logo" className='w-32 lg:w-52'/>
         </div>
         {/* Large devices */}
         <div className="hidden z-30 lg:flex items-center space-x-7 text-md">
@@ -105,7 +105,7 @@ const Navbar = () => {
             Contact
           </ScrollLink>
           <ScrollLink
-            to="footer"
+            to="calendly"
             href=''
             spy={true}
             smooth={true}
@@ -126,7 +126,7 @@ const Navbar = () => {
             <DarkModeToggle />
           </div>
         <div className="z-30 lg:hidden cursor-pointer" onClick={toggleNavbar}>
-          <HiOutlineMenuAlt2 size={30} />
+          <HiOutlineMenuAlt2 size={27} />
           </div>
         </div>
 
@@ -135,12 +135,12 @@ const Navbar = () => {
         <article className={`lg:hidden fixed z-50 top-0 -left-1/2 h-screen w-1/2 bg-zinc-300 dark:text-white dark:bg-neutral-900 py-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='flex flex-col'>
             <div className="flex justify-start mt-3">
-              <img src="logo" alt="Jifar's logo" />
+              <img src={jifar_logo} className='w-32' alt="Jifar's logo" />
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="absolute top-6 right-2 opacity-70"
               >
-                <IoIosArrowDropright size={39} />
+                <IoIosArrowDropright size={30} />
               </button>
             </div>
             <div>
@@ -162,7 +162,7 @@ const Navbar = () => {
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="services"
+                    to="about-us"
                     href=''
                     spy={true}
                     smooth={true}
@@ -172,12 +172,12 @@ const Navbar = () => {
                     onClick={() => { toggleNavbar(); }}
                       >
                         <GrCommand size={20}/>
-                    Services
+                        About us
                   </ScrollLink>
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="services"
+                    to="testimonials"
                     href=''
                     spy={true}
                     smooth={true}
@@ -187,12 +187,12 @@ const Navbar = () => {
                     onClick={() => { toggleNavbar(); }}
                       >
                         <GrCommand size={20}/>
-                    Services
+                        Testimonials
                   </ScrollLink>
                 </li>
                 <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
                   <ScrollLink
-                    to="services"
+                    to="footer"
                     href=''
                     spy={true}
                     smooth={true}
@@ -202,57 +202,13 @@ const Navbar = () => {
                     onClick={() => { toggleNavbar(); }}
                       >
                         <GrCommand size={20}/>
-                    Services
+                        Contact
                   </ScrollLink>
                 </li>
-                <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
-                  <ScrollLink
-                    to="services"
-                    href=''
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { toggleNavbar(); }}
-                      >
-                        <GrCommand size={20}/>
-                    Services
-                  </ScrollLink>
-                </li>
-                <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
-                  <ScrollLink
-                    to="services"
-                    href=''
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { toggleNavbar(); }}
-                      >
-                        <GrCommand size={20}/>
-                    Services
-                  </ScrollLink>
-                </li>
-                <li className="w-full  border-b-2 hover:border-slate-900 border-slate-400 dark:border-slate-700  dark:hover:border-slate-400 hover:cursor-pointer">
-                  <ScrollLink
-                    to="services"
-                    href=''
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { toggleNavbar(); }}
-                      >
-                        <GrCommand size={20}/>
-                    Services
-                  </ScrollLink>
-                </li>
+                
               </ul>
               <ScrollLink
-                to="services"
+                to="calendly"
                 href=''
                 spy={true}
                 smooth={true}
