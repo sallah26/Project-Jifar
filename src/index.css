@@ -25,6 +25,46 @@ code {
   font-family: 'Myfont';
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
+.link {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav-link {
+  /* font-weight: bold; */
+  /* font-size: 14px; */
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* color: #031D44; */
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #acb2bb;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
 .brightness-30 {
   filter: brightness(30%);
 }
@@ -43,8 +83,9 @@ code {
 .splide{
   padding: 0 2em;
 }
-.testi .splide__pagination{
-  margin: -50px;
+.splide__pagination--ltr{
+ bottom: -2rem;
+ /* margin-top: 20px; */
 }
 .serv .splide__pagination {
   position: relative;

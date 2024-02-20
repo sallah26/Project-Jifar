@@ -50,7 +50,7 @@ const Navbar = () => {
     <nav className={` ${isSticky ? 'special-bg2 top-0 text-slate-200' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
       <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-1 pb-9 lg:pb-2">
         <div data-aos="fade-down" data-aos-delay="200" className="cursor-pointer z-30 " onClick={scrollToTop}>
-          <img src={jifar_logo} alt="jifar logo" className='w-32 lg:w-52'/>
+          <img src={jifar_logo} alt="jifar logo" className={` ${isSticky ? 'w-32 lg:w-40' : 'w-32 lg:w-52'}`}/>
         </div>
         {/* Large devices */}
         <div className="hidden z-30 lg:flex items-center space-x-7 text-md">
@@ -62,7 +62,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="hover:text-gray-400"
+            className="hover:text-gray-300 hover:underline hover:underline-offset-8 "
             data-aos="fade-down" 
             data-aos-delay="200"
           >
@@ -75,7 +75,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="hover:text-gray-300 duration-100"
+            className="hover:text-gray-300 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
             data-aos-delay="300"
           >
@@ -88,7 +88,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
             data-aos-delay="400"
           >
@@ -101,7 +101,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="hover:text-gray-300"
+            className="hover:text-gray-300 hover:underline hover:underline-offset-8"
             data-aos="fade-down" 
             data-aos-delay="500"
           >
