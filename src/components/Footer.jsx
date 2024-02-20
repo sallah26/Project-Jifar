@@ -28,7 +28,7 @@ const Footer = () => {
           <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1DA1F2] duration-150'>
             <FaTwitter size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1877F2] duration-150'>
+          <a href='#' className='p-2.5  bg-slate-900 rounded-sm hover:text-[#1877F2] duration-150'>
             <FaFacebookF size={22}/>
           </a>
           <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#bc2a8d] duration-150'>
@@ -61,7 +61,7 @@ const Footer = () => {
             className=""
             
               >
-                <div className='pb-1 pt-3 px-2 hover:cursor-pointer'>
+                <div className='pb-1 pt-2 px-1 hover:cursor-pointer'>
                   <IoArrowUpSharp size={45}  className='animate-bounce'/>
                 </div>
           </ScrollLink>
