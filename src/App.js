@@ -19,7 +19,7 @@ import { RiArrowUpDoubleLine } from "react-icons/ri";
 function App() {
   return (
     <div className="app dark:bg-neutral-800">
-      <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-zinc-900 text-white dark:bg-fuchsia-600">
+      <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0  text-white bg-[#ED7D31]">
         <DarkModeToggle color={"white"} />
       </div>
       <img src={logo_bg} alt='logo background' className='absolute top-0 z-0 left-0 dark:opacity-10'/>

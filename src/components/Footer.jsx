@@ -51,7 +51,7 @@ const Footer = () => {
       
       
       
-      <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-zinc-900 text-white dark:bg-fuchsia-600 bg-opacity-35">
+      <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-[#ED7D31] text-white  ">
         <ScrollLink
             to="hero"
             spy={true}

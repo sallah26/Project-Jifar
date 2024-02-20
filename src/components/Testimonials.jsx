@@ -112,7 +112,7 @@ const Testimonials = () => {
         <Splide options={splideOptions}>
           {testimonialsData.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div data-aos="fade-left" data-aos-delay={testimonial.delay} className="flex testi duration-100 hover:border-b-2  border-slate-600 flex-col gap-5 p-2 md:pb-4 w-full md:max-w-[470px]">
+              <div data-aos="fade-left" data-aos-delay={testimonial.delay} className="flex testi duration-100 hover:border-b-2  border-[#ed7c317e] flex-col gap-5 p-2 md:pb-4 w-full md:max-w-[470px]">
                 <p className="italic">{testimonial.message}</p>
                 <div className="flex gap-2">
                   <div className="w-1/6">

@@ -78,7 +78,7 @@ const Features = () => {
             >
               <img src={feature.img} alt={`${feature.title} picturee`} />
               <p className="text-md lg:text-lg">{feature.title}</p>
-              <div className="text-3xl lg:text-6xl text-fuchsia-600">
+              <div className="text-3xl lg:text-6xl text-[#ED7D31]">
                 <p className="text-4xl lg:text-6xl">
                   <AnimatedCounter value={feature.amount} />
                   {feature.sign}

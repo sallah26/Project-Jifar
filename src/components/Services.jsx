@@ -8,7 +8,7 @@ import image0 from "../images/case-study-4 (1).png"
 import image1 from "../images/case-study-5.png";
 import image2 from "../images/case-study-6.png";
 import AnimatedCounter from './AnimatedCounter ';
-
+import { MdOutlineVerifiedUser } from "react-icons/md";
 
 
 const Services = () => {
@@ -32,21 +32,15 @@ const Services = () => {
       description1:
         "We don't offer any other services except for paid advertising on Meta...",
       description2:
-          `⦁	No SOCIAL MEDIA MANAGEMENT
-            ⦁	​No INSTAGRAM GROWTH
-            ⦁	No WEB DESIGN
-            ⦁	No PR SERVICE
-            ⦁	​No CONTENT CREATION
-            ⦁	​No EMAIL MARKETING
-            ⦁	No SEO`,
+          ["No SOCIAL MEDIA MANAGEMENT",	"​No INSTAGRAM GROWTH",	"No WEB DESIGN",	"No PR SERVICE", "​No CONTENT CREATION",	"​No EMAIL MARKETING",	"No SEO]"],
     },
-    {
+          {
       id: 3,
       title: "Interior design leads using the power of Meta ads.",
       description1:
         "We help home interior design business owners escape the competition on YouTube & Google and instead leverage the power of Meta ads. It's a powerful, dynamic advertising platform that offers huge opportunity for business owners.",
       description2:
-        "",
+        null,
     },
     {
       id: 2,
@@ -54,7 +48,7 @@ const Services = () => {
       description1:
         "We are a specialist interior design leads,S company that works only with interior design businesses. We do not work with any other industry. We use Meta ads to locate and attract motivated, qualified ‘ready to buy’ customers.",
       description2:
-        "",
+        null,
     },
   ];
   const Images = [image0, image1, image2];
@@ -87,8 +81,18 @@ const Services = () => {
                   </p>
                   <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="50" >{testimonial.title}</p>
                   <p className="text-md" data-aos="fade-left" data-aos-delay="100" >{testimonial.description1}</p>
-                  <p className="text-md" data-aos="fade-right" data-aos-delay="150" >{testimonial.description2}</p>
-                  <div className="my-2 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-fuchsia-600 odos">
+                  {testimonial.description2 ? <div>
+                         {testimonial.description2.map((datm) => {
+                          return(
+                            <div className='flex gap-1 items-center mt-0.5'>
+                            <MdOutlineVerifiedUser color='#ED7D31' size={24}/><p>{datm}</p>
+                            </div>
+                          )
+                         })}
+                  </div> : <div>
+                          </div>}
+                  {/* <p className="text-md" data-aos="fade-right" data-aos-delay="150" >{testimonial.description2}</p> */}
+                  <div className="my-2 flex gap-8 lg:gap-16 text-4xl lg:text-5xl text-[#ED7D31] odos">
                     <div data-aos="fade-left" data-aos-delay="350">
                       <AnimatedCounter value={23} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>
