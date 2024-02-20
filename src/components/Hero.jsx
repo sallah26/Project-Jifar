@@ -4,6 +4,8 @@ import AnimatedButton from './AnimatedButton';
 import man_image from "../images/3D-Man (1).png"
 import window_img from "../images/window.png"
 import hero_bg from "../images/Hero_bg3.png";
+import hero_img from "../images//hero-img.png"
+
 
 const Hero = () => {
   useEffect(() => {
@@ -34,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="p-6 lg:p-16" >
-          <img src={hero_bg} data-aos="fade-up" data-aos-delay="500" alt="hero image" />
+          <img src={hero_img} data-aos="fade-up" data-aos-delay="500" alt="hero image" />
         </div>
       </section>
     </main>
