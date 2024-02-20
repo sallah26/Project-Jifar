@@ -1,6 +1,7 @@
 // Navbar.js
 import React, { useState, useEffect } from 'react';
 import AOS from "aos";
+import Form from "./Form.jsx";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import AnimatedButton from './AnimatedButton';
@@ -118,7 +119,8 @@ const Navbar = () => {
             data-aos="fade-down" 
             data-aos-delay="600"
           >
-          <div className="hidden lg:flex z-30">
+          <div className="hidden lg:flex z-30 ">
+            {/* <Form className="p-2"/> */}
             <AnimatedButton name={"BOOK NOW"} />
           </div>
           </ScrollLink>

@@ -59,18 +59,14 @@ const Services = () => {
       <div className="flex w-full lg:max-w-[1470px]  py-5 lg:py-10 t">
         <div className="w-full lg:mt-16 serv lg:w-6/12 relative" >
                 
-                <div className="absolute z-50 flex flex-col gap-1 top-1/4 rotate-90  ml-5 right-0  rounded-full bg-[#ED7D31] text-white  ">
-                <div className='pb-1 pt-2 px-1 hover:cursor-move'>
-                  <MdKeyboardDoubleArrowUp size={40}  className='animate-bounce'/>
-                </div>
-                </div>
                
+             
           <Splide
             options={{
               type: "loop",
               perPage: 1,
               perMove: 1,
-              arrows: false,
+              arrows: true,
               pagination: true,
               paginationDirection: true,
             }}
@@ -81,6 +77,11 @@ const Services = () => {
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
                 <div className="flex flex-col gap-3 ">
+              {/* <div className="splide__arrows splide__arrows--ltr  absolute z-50 flex flex-col gap-1 top-1/4 rotate-90  ml-5 right-0  rounded-full bg-[#ED7D31] text-white  ">
+              <div className='splide__arrow splide__arrow--next pb-1 pt-2 px-1'>
+                <MdKeyboardDoubleArrowUp size={40}  className='animate-bounce'/>
+              </div>
+              </div> */}
                   <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-left" data-aos-delay="0" >
                     Our services are
                   </p>

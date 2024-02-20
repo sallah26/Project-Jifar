@@ -32,6 +32,7 @@ function App() {
       <Services />
       <Testimonials />
       <Companies />
+      <Form />
       <Footer />
       
     </div>

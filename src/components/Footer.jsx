@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer id='footer' className="relative special-bg text-md md:text-md text-neutral-200 ">
       <div className='flex flex-col gap-4 items-center py-4'>
-        <img src={jifar_logo} alt="jifar logo" className='w-full lg:w-80 -pb-2'/>
+        <img src={jifar_logo} alt="jifar logo" className='w-1/2 md:w-40 pt-3'/>
         <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold '>Jifar Agency</p>
         <p className="">JifarHomeS.com | jifar@homes.com</p>
         <div className='flex gap-3'>

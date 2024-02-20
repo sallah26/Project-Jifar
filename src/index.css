@@ -49,6 +49,9 @@ code {
  bottom: -2rem;
  /* margin-top: 20px; */
 }
+
+
+
 .serv .splide__pagination {
   position: relative;
   display: flex;
@@ -136,9 +139,14 @@ body {
 
 
 .glow-on-hover {
-  min-width: 180px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
   font-size: 20px;
   height: 55px;
+
   border: none;
   outline: none;
   color: #fff;
@@ -236,4 +244,22 @@ body {
 
 .special-bg{
   background-color: rgba(43, 50, 59);
+}
+
+
+.serv .splide__arrow--prev{
+  display: none;
+  /* animation: bounce infinite 2s; */
+  transform: translateX(15px);
+  animation-duration: 500ms;
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px); 
+  }
 }

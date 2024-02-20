@@ -35,7 +35,7 @@ const Hero = () => {
             <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
           </div>
         </div>
-        <div className="p-6 lg:p-16" >
+        <div className=" lg:p-6" >
           <img src={hero_img} data-aos="fade-up" data-aos-delay="500" alt="hero image" />
         </div>
       </section>
