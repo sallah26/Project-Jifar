@@ -51,8 +51,8 @@ const Footer = () => {
             className=""
             
               >
-                <div className='pb-0.5 pt-1 px-0.5 hover:cursor-pointer'>
-                  <IoArrowUpSharp size={35}  className='animate-bounce'/>
+                <div className='pb-1 pt-2 px-1 hover:cursor-pointer'>
+                  <IoArrowUpSharp size={35}  className='bounc-up '/>
                 </div>
           </ScrollLink>
       </div>

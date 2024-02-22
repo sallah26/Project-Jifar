@@ -25,6 +25,18 @@ code {
   font-family: 'Myfont';
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
+.bounc-up{
+  animation: bounce-upp 1s infinite;
+}
+@keyframes bounce-upp {
+  
+  0%, 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(6px); /* Adjust the distance as needed */
+  }
+}
 
 @keyframes bounce-right {
   

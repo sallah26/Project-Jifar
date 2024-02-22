@@ -1,7 +1,7 @@
 import './App.css';
 import 'aos/dist/aos.css';
 import "react-datetime/css/react-datetime.css";
-import "./index.css"
+import "./index.css";
 import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import DarkModeToggle from "./components/DarkMode";
@@ -13,7 +13,6 @@ import Features from "./components/Features";
 import Form from "./components/Form";
 import Companies from './components/Companies ';
 import logo_bg from "./images/bubble-39.png";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
 // import Companies from "./components/Companies.jsx";
 
 function App() {
