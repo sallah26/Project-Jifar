@@ -121,8 +121,7 @@ const Navbar = () => {
             data-aos-delay="600"
           >
           <div className="hidden lg:flex z-30 ">
-            {/* <Form className="p-2"/> */}
-            <AnimatedButton name={"BOOK NOW"} />
+            <AnimatedButton namee={"BOOK NOW"} />
           </div>
           </ScrollLink>
           

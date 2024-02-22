@@ -3,7 +3,7 @@ import "./styles/AnimatedButton.css";
 import { PopupWidget } from "react-calendly";
 import "./styles/AnimatedButton.css";
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="App">
       <PopupWidget
@@ -13,14 +13,9 @@ const App = () => {
          * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
          */
         rootElement={document.getElementById("root")}
+        text={props.namee}
         style={{
-          backgroundColor: "#ff6347",
-          color: "#ffffff",
-          border: "none",
-          borderRadius: "5px",
-          padding: "10px 20px",
-          fontSize: "1.2rem",
-          cursor: "pointer",
+          className: "glow-on-hover"
           
         }}
       />

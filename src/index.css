@@ -25,10 +25,104 @@ code {
   font-family: 'Myfont';
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
-
-.calendly-badge-widget .calendly-badge-content{
-  border: 3px red solid;
+.calendly-badge-widget{
+  right: 0px;
+  bottom: 0px;
+  /* margin-top: 10px!important; */
+  position: relative!important;
 }
+.calendly-badge-widget .calendly-badge-content {
+  display: flex!important;
+  
+  justify-content: center!important;
+  align-items: center!important;
+  min-width: 200px!important;
+  font-size: 20px!important;
+  height: 55px!important;
+
+  border: none!important;
+  outline: none!important;
+  color: #fff!important;
+  background: #857373!important;
+  cursor: pointer!important;
+  position: relative!important;
+  z-index: 0!important;
+  border-radius: 50px!important;
+  
+}
+
+.calendly-badge-widget .calendly-badge-content:before {
+  content: ''!important;
+  background: linear-gradient(45deg, #ED7D31,  #00ffd5, #002bff, #7a00ff, #ED7D31, #ff0000);
+  position: absolute!important;
+  top: -2px!important;
+  left: -2px!important;
+  background-size: 400%!important;
+  z-index: -1!important;
+  filter: blur(0px)!important;
+  width: calc(100% + 4px)!important;
+  height: calc(100% + 4px)!important;
+  animation: glowing 20s linear infinite!important;
+  opacity: 0!important;
+  transition: opacity 3s ease-in-out!important;
+  border-radius: 50px!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:active {
+  color: #b64949!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:active:after {
+  background: transparent!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:before {
+  opacity: 1!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:after {
+  z-index: -1!important;
+  content: ''!important;
+  position: absolute!important;
+  width: 100%!important;
+  height: 100%!important;
+  background: #252222!important;
+  left: 0!important;
+  top: 0!important;
+  border-radius: 50px!important;
+}
+
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0 !important;
+  }
+
+  50% {
+    background-position: 400% 0 !important;
+  }
+
+  100% {
+    background-position: 0 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .brightness-30 {
   filter: brightness(30%);

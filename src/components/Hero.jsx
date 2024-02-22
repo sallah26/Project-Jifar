@@ -5,7 +5,7 @@ import man_image from "../images/3D-Man (1).png"
 import window_img from "../images/window.png"
 import hero_bg from "../images/Hero_bg3.png";
 import hero_img from "../images/hero image form ps.png"
-
+import Btn from "./Btn";
 
 const Hero = () => {
   useEffect(() => {
@@ -23,6 +23,7 @@ const Hero = () => {
             <p data-aos="fade-up" data-aos-delay="850" className=" text-5xl font-semibold md:text-6xl lg:font-bold  text-transparent bg-clip-text bg-gradient-to-r from-[#ED7D31] to-[#a34f17]">
                 Strong Results
             </p>
+          
               <p data-aos="fade-up" data-aos-delay="1000" className="text-5xl font-semibold md:text-6xl lg:font-bold">Choose Us</p>
           <p data-aos="fade-up" data-aos-delay="1200" className="p-2  ">
           We specialize in helping interior design businesses in achieving exceptionally high ROI through our expertise in paid advertising.
