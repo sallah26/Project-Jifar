@@ -3,7 +3,7 @@ import { PopupWidget } from "react-calendly";
 
 const App = () => {
   return (
-    <div className="App ">
+    <div className="App">
       <PopupWidget
         url="https://calendly.com/nesredin/welcome-to-jifar-agency-booking"
         /*
@@ -11,12 +11,14 @@ const App = () => {
          * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
          */
         rootElement={document.getElementById("root")}
-        // text="Click here to schedule!"
-        // textColor="#ffffff"
-        // color="#00a2ff"
+        text="Click here to schedule!"
+        textColor="#ffffff"
+        color="#00a2ff"
       />
     </div>
   );
 };
 
 export default App;
+
+
