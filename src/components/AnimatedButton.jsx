@@ -1,47 +1,34 @@
-import React, { useState } from 'react';
-import { InlineWidget } from 'react-calendly';
+import React from "react";
+import "./styles/AnimatedButton.css";
+import { PopupWidget } from "react-calendly";
+import "./styles/AnimatedButton.css";
 
-const AnimatedButton = (props) => {
-  const [showCalendly, setShowCalendly] = useState(false);
-
-  const handleButtonClick = () => {
-    setShowCalendly(true);
-  };
-
+const App = () => {
   return (
-    <div>
-      <button
-        className="glow-on-hover text-md text-red-700"
-        style={{ width: `${props.myWidth}` }}
-        onClick={handleButtonClick}
-      >
-        {props.name}
-      </button>
-
-      {showCalendly && (
-        <div className="calendly-container">
-          <div className="calendly-close" onClick={() => setShowCalendly(false)}>
-            Close
-          </div>
-          <InlineWidget
-            url="https://calendly.com/nesredin/welcome-to-jifar-agency-booking"
-            text="Schedule a Meeting"
-            style={{
-              minWidth: '200px', // Adjust the button width as needed
-              color: '#ffffff',
-              background: '#3498db',
-              borderRadius: '5px',
-              padding: '10px 20px',
-            }}
-          />
-        </div>
-      )}
+    <div className="App">
+      <PopupWidget
+        url="https://calendly.com/nesredin/welcome-to-jifar-agency-booking"
+        /*
+         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+         */
+        rootElement={document.getElementById("root")}
+        style={{
+          backgroundColor: "#ff6347",
+          color: "#ffffff",
+          border: "none",
+          borderRadius: "5px",
+          padding: "10px 20px",
+          fontSize: "1.2rem",
+          cursor: "pointer",
+          
+        }}
+      />
     </div>
   );
 };
 
-export default AnimatedButton;
-
+export default App;
 // import React from 'react'
 // import Form from "./Form"
 

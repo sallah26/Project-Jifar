@@ -1,0 +1,44 @@
+.custom-button {
+    background-color: #ff6347 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 10px 20px !important;
+    font-size: 1.2rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+  }
+
+
+
+.custom-button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .custom-button:hover{
+    background-color: aqua;
+  }
+  .custom-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ff4500;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+  }
+  
+  .custom-button:hover:before {
+    transform: scaleX(1);
+  }
