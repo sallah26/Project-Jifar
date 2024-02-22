@@ -239,6 +239,32 @@ code {
           /* Adjust vertical position */
         }
       }
+      @media screen and (min-width: 1558px) {
+       
+        @keyframes bounce-right {
+          
+          0%, 100% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(35px); /* Adjust the distance as needed */
+          }
+        }
+
+      
+
+        @keyframes bounce-left {
+          
+          0%, 100% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(-35px);
+          }
+        }
+            /* Adjust vertical position */
+          }
+       
 
 
 .splide__pagination__page {
