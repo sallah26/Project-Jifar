@@ -25,6 +25,39 @@ code {
   font-family: 'Myfont';
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
+
+@keyframes bounce-right {
+  
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* Adjust the distance as needed */
+  }
+}
+
+.splide__arrow--next  {
+ 
+  animation: bounce-right 2s infinite;
+}
+
+@keyframes bounce-left {
+  
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+.splide__arrow--prev  {
+  animation: bounce-left 2s infinite;
+}
+.splide__arrow{
+  margin-top: -80px;
+}
+
 .calendly-badge-widget{
   right: 0px!important;
   bottom: 0px!important;

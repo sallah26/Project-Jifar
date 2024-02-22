@@ -1,13 +1,11 @@
 // Navbar.js
 import React, { useState, useEffect } from 'react';
 import AOS from "aos";
-import Form from "./Form.jsx";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import AnimatedButton from './AnimatedButton';
 import DarkModeToggle from './DarkMode';
-import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
-import { GrCommand } from "react-icons/gr";
+import { IoIosArrowDropright } from 'react-icons/io';
 import jifar_logo from "../images/jifar_logo.svg";
 import { MdOutlineElectricalServices } from "react-icons/md";
 import { IoHome } from "react-icons/io5";

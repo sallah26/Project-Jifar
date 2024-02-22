@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import React, { useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import AOS from "aos";
-import jifar_logo from "../images/jifar_logo.svg"
-import { FaArrowUp, FaInstagram, FaPinterest, FaPinterestP, FaYoutube } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import jifar_logo from "../images/jifar_logo.svg";
+import { FaInstagram, FaPinterestP, FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 

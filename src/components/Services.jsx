@@ -1,17 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import AOS from "aos";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import Odometer from "odometer";
+
 import "odometer/themes/odometer-theme-default.css";
 
 import image0 from "../images/case-study-4 (1).png"
 import image1 from "../images/case-study-5.png";
 import image2 from "../images/case-study-6.png";
-import AnimatedCounter from './AnimatedCounter ';
 import { MdOutlineVerifiedUser } from "react-icons/md";
-import { IoArrowUpSharp } from 'react-icons/io5';
-import { FaAnglesRight } from "react-icons/fa6";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
 const Services = () => {
   useEffect(() => {
@@ -77,11 +73,7 @@ const Services = () => {
             {servicesData.map((testimonial) => (
               <SplideSlide key={testimonial.id}>
                 <div className="flex flex-col gap-3 ">
-              {/* <div className="splide__arrows splide__arrows--ltr  absolute z-50 flex flex-col gap-1 top-1/4 rotate-90  ml-5 right-0  rounded-full bg-[#ED7D31] text-white  ">
-              <div className='splide__arrow splide__arrow--next pb-1 pt-2 px-1'>
-                <MdKeyboardDoubleArrowUp size={40}  className='animate-bounce'/>
-              </div>
-              </div> */}
+            
                   <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-left" data-aos-delay="0" >
                     Our services are
                   </p>
