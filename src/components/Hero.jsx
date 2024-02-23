@@ -23,13 +23,13 @@ const Hero = () => {
               <p data-aos="fade-up" data-aos-delay="1000" className="text-5xl font-semibold md:text-6xl lg:font-bold">Business With Ad</p>
           <p data-aos="fade-up" data-aos-delay="1200" className="p-2  ">
           We specialize in helping interior design businesses in achieving exceptionally high ROI through our expertise in paid advertising.
-          Stop wasting your resources on flawed and inefficient advertising campaigns any longer.
+          <br /> Stop wasting your resources on flawed and inefficient advertising campaigns any longer.
           It's time to maximize the impact of your ad budget, expand your business, and skyrocket your sales.
 
           </p>
 
           <div className="mt-2" data-aos="fade-up" data-aos-delay="1000" >
-            <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
+            <AnimatedButton namee={"Schedule With Me"} myWidth="300px" />
           </div>
         </div>
         <div className=" lg:p-6" >
