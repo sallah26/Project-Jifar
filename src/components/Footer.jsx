@@ -22,7 +22,7 @@ const Footer = () => {
         <img src={jifar_logo} alt="jifar logo" className='w-1/2 md:w-40 pt-3'/>
         <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold '>Jifar Agency</p>
         <p><a href='https://jifarhomes.com' className="text-sm">JifarHomeS.com </a>| jifar@homes.com</p>
-        <div className='flex gap-3'>
+        <div className='flex gap-3 sm:max-w-[200px]'>
           <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1DA1F2] duration-150'>
             <FaTwitter size={22}/>
           </a>

@@ -13,7 +13,7 @@ import { GrContact } from "react-icons/gr";
 import { FaUsersGear } from "react-icons/fa6";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     AOS.init({
@@ -58,7 +58,7 @@ const Navbar = () => {
 
   return (
     <nav ref={menuRef} className={` ${isSticky ? 'special-bg2 top-0 text-slate-200' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
-      <div className="container max-w-[1470px] mx-auto flex items-center justify-between p-1 pb-3 lg:pb-2">
+      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-1 pb-5                            lg:pb-2">
         <div data-aos="fade-down" data-aos-delay="200" className="cursor-pointer z-30 " onClick={scrollToTop}>
           <img src={jifar_logo} alt="jifar logo" className={` ${isSticky ? 'w-32 lg:w-40' : 'w-32 lg:w-52'}`}/>
         </div>

@@ -1,3 +1,10 @@
+@media screen and (max-width : 500px){
+.card {
+   width: 140px; 
+}
+}
+  
+
 .card {
     perspective: 1000px;
     width: 170px; 

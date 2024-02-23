@@ -45,7 +45,7 @@ const CompaniesData = [
   return (
     <section
       id="performance"
-      className="py-8 flex flex-col special-bg  mx-auto text-neutral-100 "
+      className="p-4 py-8 flex flex-col special-bg  mx-auto text-neutral-100 "
     >
      
       <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
