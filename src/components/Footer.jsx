@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
         <p className="text-center p-2 bg-slate-900  text-sm mt-5">©COPYRIGHT 2024 | <span className='text-[#ED7D31]'>JIFAR AGENCY</span> | POWERED BY JIFAR</p>
-      <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-[#ED7D31] text-white  ">
+      {/* <div className="absolute z-50 flex flex-col gap-1 bottom-10 right-10  rounded-full bg-[#ED7D31] text-white  ">
         <ScrollLink
             to="hero"
             spy={true}
@@ -55,7 +55,7 @@ const Footer = () => {
                   <IoArrowUpSharp size={35}  className='bounc-up '/>
                 </div>
           </ScrollLink>
-      </div>
+      </div> */}
     </footer>
   );
 }

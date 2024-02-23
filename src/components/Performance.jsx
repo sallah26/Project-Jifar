@@ -8,14 +8,14 @@ import feautre_img3 from "../images/icon-37.png";
 import feautre_img4 from "../images/icon-39.png";
 
 
-const Features = () => {
+const Performance = () => {
   useEffect(() => {
     AOS.init({
         once: false // Whether animation should happen only once
     });
 }, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
 
-    const FeaturesData = [
+    const PerformanceData = [
       {
         id: 0,
         title: "Clients Helped",
@@ -32,16 +32,9 @@ const Features = () => {
         sign: "%",
         delay: "450",
       },
+      
       {
         id: 2,
-        title: "Offices",
-        img: feautre_img3,
-        amount: 29,
-        sign: null,
-        delay: "650",
-      },
-      {
-        id: 3,
         title: "Service Offer",
         img: feautre_img4,
         amount: 45,
@@ -63,13 +56,13 @@ const Features = () => {
         </p>
         <p className="text-3xl lg:text-4xl p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">Performance Highlights</p>
         <p className="text-base w-full lg:w-1/2 text-center p-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
-          Here at E-wamp, we've worked with the best in the industry to produce
+          Here at Jifar Agency, we've worked with the best in the industry to produce
           thousands of dollars in return on ad spend. We do away with the the
           inefficiencies & formalities that plague most agencies.
         </p>
       </div>
       <div className="container p-4 justify-center grid gap-3 lg:gap-5 grid-cols-2 lg:grid-cols-4">
-        {FeaturesData.map((feature) => {
+        {PerformanceData.map((feature) => {
           return (
             <div
               key={feature.id}
@@ -92,4 +85,4 @@ const Features = () => {
   );
 }
 
-export default Features
+export default Performance

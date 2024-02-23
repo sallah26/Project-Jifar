@@ -9,8 +9,8 @@ import WhatWeDoFirst from "./components/WhatWeDoFirst";
 import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
-import Features from "./components/Features";
-import Form from "./components/Form";
+import Performance from "./components/Performance";
+import CalendlyWidget from "./components/CalendlyWidget";
 import Companies from './components/Companies ';
 import logo_bg from "./images/bubble-39.png";
 // import Companies from "./components/Companies.jsx";
@@ -27,11 +27,11 @@ function App() {
         <Hero />
       </div>
       <WhatWeDoFirst />
-      <Features />
+      <Performance />
       <Services />
       <Testimonials />
       <Companies />
-      <Form />
+      <CalendlyWidget />
       <Footer />
       
     </div>
