@@ -55,7 +55,7 @@ const Testimonials = () => {
     {
       id: 4,
       name: "Kian Rashidi",
-      expertise: `Frontend Developer at Google`,
+      expertise: `Interior desingner`,
       delay: "1000",
       profile: profile3,
       message:
