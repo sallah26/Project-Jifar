@@ -29,7 +29,7 @@ const Services = () => {
       [  "No social media management",  "No instagram growth",  "No web design",  "No PR service",  "No content creation",  "No email marketing",  "No seo"]      
     },
           {
-      id: 3,
+      id: 1,
       title: "Interior design leads using the power of Meta ads.",
       description1:
         "We help home interior design business owners escape the competition on YouTube & Google and instead leverage the power of Meta ads. It's a powerful, dynamic advertising platform that offers huge opportunity for business owners.",

@@ -41,33 +41,34 @@ code {
 @keyframes bounce-right {
   
   0%, 100% {
-    transform: translateX(0);
+    transform: translateX(-6px)!important;
   }
   50% {
-    transform: translateX(20px); /* Adjust the distance as needed */
+    transform: translateX(0px)!important; /* Adjust the distance as needed */
   }
 }
 
 .splide__arrow--next  {
  
-  animation: bounce-right 2s infinite;
+  animation: bounce-right 2s infinite!important;
 }
 
 @keyframes bounce-left {
   
   0%, 100% {
-    transform: translateX(0);
+    transform: translateX(6px);
   }
   50% {
-    transform: translateX(-20px);
+    transform: translateX(0px);
   }
 }
 
 .splide__arrow--prev  {
-  animation: bounce-left 2s infinite;
+  animation: bounce-left 2s infinite!important;
 }
 .splide__arrow{
   margin-top: -80px;
+  margin-left: 10px;
 }
 
 .calendly-badge-widget{
@@ -80,8 +81,8 @@ code {
   
   justify-content: center!important;
   align-items: center!important;
-  min-width: 200px!important;
-  font-size: 20px!important;
+  /* min-width: 100px!important; */
+  /* font-size: 15px!important; */
   height: 55px!important;
 
   border: none!important;
@@ -155,18 +156,12 @@ code {
     background-position: 0 0 !important;
   }
 }
+@media screen and (min-width: 758px){
+.calendly-badge-widget .calendly-badge-content {
+  font-size: 20px!important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 .brightness-30 {
   filter: brightness(30%);
@@ -227,12 +222,17 @@ code {
   /* border-radius: 50%; */
   width: 40px;
   height: 70%;
-  margin-left: -49px;
-    margin-right: -49px;
-  /* margin-top: -20px; Adjust vertical position */
+  margin-left: -40px;
+    margin-right: -40px;
+  /* margin-top: -110px; */
 }
 
-@media screen and (max-width: 758px){
+@media screen and (max-width: 500px){
+  .hid{
+    display: none;
+  }
+}
+  @media screen and (max-width: 758px){
 .splide__pagination__page {
   /* left: 20px; */
 }
@@ -247,7 +247,7 @@ code {
           height: 70%;
           margin-left: -4px;
           margin-right: -4px;
-          margin-top: -20px;
+          /* margin-top: -20px; */
           /* Adjust vertical position */
         }
       }
