@@ -18,7 +18,7 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 0,
-      name: "Selahadin Hamid",
+      name: "Selahadin H.",
       expertise: "Software Engineer",
       delay: "200",
       profile: profile1,
