@@ -24,7 +24,31 @@ code {
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
 
+.cpright{
+    font-size: 17px;
+   
+}
+@media screen and (max-width: 767px){
 
+    .cpright{
+        font-size: 13px;
+    }
+}
+.mb-less{
+    bottom: 100px;
+    right: 40px;
+}
+
+@media screen and (max-width: 767px){
+    
+.mb-less{
+    bottom: 200px;
+    right: 20px;
+    transform: scale(70%);
+    /* translate: 2; */
+}
+
+}
 .bounc-up{
   animation: bounce-upp 1s infinite;
 }
