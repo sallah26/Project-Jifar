@@ -65,10 +65,10 @@ code {
 @keyframes bounce-right {
   
   0%, 100% {
-    transform: translateX(-6px)!important;
+    transform: translateX(-6px);
   }
   50% {
-    transform: translateX(0px)!important; /* Adjust the distance as needed */
+    transform: translateX(0px); /* Adjust the distance as needed */
   }
 }
 
@@ -210,14 +210,20 @@ code {
  bottom: -2rem;
  /* margin-top: 20px; */
 }
-
-
+.testimonials {
+    padding-bottom: 50px;
+}
+.testimonials .splide__pagination--ltr{
+    bottom: -2rem;
+    /* margin-top: 20px; */
+   }
+   
 
 .serv .splide__pagination {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  margin-top: 5%;
+  margin-top: 8%;
   margin-left: -20px;
   
 }
@@ -275,6 +281,15 @@ code {
           /* margin-top: -20px; */
           /* Adjust vertical position */
         }
+        .testimonials .splide__arrow--next{
+            /* display: none; */
+            /* margin-top: 18px; */
+            animation: bounce-right 2s infinite!important;
+
+
+            
+        }
+        
       }
       @media screen and (min-width: 1558px) {
        
@@ -437,7 +452,6 @@ body {
 .special-bg{
   background-color: rgba(43, 50, 59);
 }
-
 
 .serv .splide__arrow--prev{
   display: none;

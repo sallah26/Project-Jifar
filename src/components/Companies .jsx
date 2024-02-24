@@ -52,7 +52,7 @@ const CompaniesData = [
         <p data-aos="zoom-in" data-aos-delay="250" className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]">
           Top Clients
         </p>
-        <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2">Companies That Trust Us</p>
+        <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2 text-center ">Companies That Trust Us</p>
         <p data-aos="zoom-in" data-aos-delay="450" className="text-base w-full  text-center p-[2px]">
           Here at E-wamp, we've worked with the best in the
         </p>
@@ -65,7 +65,7 @@ const CompaniesData = [
                     data-aos="zoom-in" 
                     data-aos-delay={company.delay}
                     key={company.id}
-                    className="card items-center shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 rounded-2xl"
+                    className="w-[43%] md:w-auto card items-center shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 rounded-2xl"
                   >
                      <div className="card-inner">
                         <div className="card-front special-bg">
