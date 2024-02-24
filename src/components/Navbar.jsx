@@ -13,7 +13,7 @@ import { GrContact } from "react-icons/gr";
 import { FaUsersGear } from "react-icons/fa6";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {
     AOS.init({

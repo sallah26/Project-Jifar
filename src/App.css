@@ -1,7 +1,433 @@
-div{
-font: normal;
-weight: added;
-attributed: formualted;
-ocated: formulated;
-value: me;
+
+
+@import '@splidejs/react-splide/css';
+@import '@splidejs/react-splide/css/skyblue';
+@import '@splidejs/react-splide/css/sea-green';
+@import '@splidejs/react-splide/css/core';
+
+
+body {
+  /* margin: 0; */
+  /* padding: 0; */
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: 'Myfont';
+  src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
+}
+
+
+.bounc-up{
+  animation: bounce-upp 1s infinite;
+}
+@keyframes bounce-upp {
+  
+  0%, 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(6px); /* Adjust the distance as needed */
+  }
+}
+
+@keyframes bounce-right {
+  
+  0%, 100% {
+    transform: translateX(-6px)!important;
+  }
+  50% {
+    transform: translateX(0px)!important; /* Adjust the distance as needed */
+  }
+}
+
+.splide__arrow--next  {
+ 
+  animation: bounce-right 2s infinite!important;
+}
+
+@keyframes bounce-left {
+  
+  0%, 100% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+
+.splide__arrow--prev  {
+  animation: bounce-left 2s infinite!important;
+}
+.splide__arrow{
+  margin-top: -80px;
+  margin-left: 10px;
+}
+
+.calendly-badge-widget{
+  right: 0px!important;
+  bottom: 0px!important;
+  position: relative!important;
+}
+.calendly-badge-widget .calendly-badge-content {
+  display: flex!important;
+  
+  justify-content: center!important;
+  align-items: center!important;
+  /* min-width: 100px!important; */
+  /* font-size: 15px!important; */
+  height: 55px!important;
+
+  border: none!important;
+  outline: none!important;
+  color: #fff!important;
+  background: #857373!important;
+  cursor: pointer!important;
+  position: relative!important;
+  z-index: 0!important;
+  border-radius: 50px!important;
+  
+}
+
+.calendly-badge-widget .calendly-badge-content:before {
+  content: ''!important;
+  background: linear-gradient(45deg, #ED7D31,  #00ffd5, #002bff, #7a00ff, #ED7D31, #ff0000);
+  position: absolute!important;
+  top: -2px!important;
+  left: -2px!important;
+  background-size: 400%!important;
+  z-index: -1!important;
+  filter: blur(0px)!important;
+  width: calc(100% + 4px)!important;
+  height: calc(100% + 4px)!important;
+  animation: glowing 20s linear infinite!important;
+  opacity: 0!important;
+  transition: opacity 3s ease-in-out!important;
+  border-radius: 50px!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:active {
+  color: #b64949!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:active:after {
+  background: transparent!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:before {
+  opacity: 1!important;
+}
+
+
+.calendly-badge-widget .calendly-badge-content:after {
+  z-index: -1!important;
+  content: ''!important;
+  position: absolute!important;
+  width: 100%!important;
+  height: 100%!important;
+  background: #252222!important;
+  left: 0!important;
+  top: 0!important;
+  border-radius: 50px!important;
+}
+
+
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0 !important;
+  }
+
+  50% {
+    background-position: 400% 0 !important;
+  }
+
+  100% {
+    background-position: 0 0 !important;
+  }
+}
+@media screen and (min-width: 758px){
+.calendly-badge-widget .calendly-badge-content {
+  font-size: 20px!important;
+}
+
+
+}
+
+.brightness-30 {
+  filter: brightness(30%);
+}
+
+
+.rdt .form-control{
+  display: hidden;
+}
+.rdtPicker{
+  position: relative;
+  max-width: 450px;
+  background-color: #857373;
+  border: 3px red solid;
+  /* display: ; */
+}
+.splide{
+  padding: 0 2em;
+}
+.splide__pagination--ltr{
+ bottom: -2rem;
+ /* margin-top: 20px; */
+}
+
+
+
+.serv .splide__pagination {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5%;
+  margin-left: -20px;
+  
+}
+.serv .splide{
+  /* margin-left:20px ; */
+}
+
+.splide__slide{
+  padding:0 -16px;
+}
+
+.odometer {
+  /* font-size: 4em; */
+  /* margin-top: 1em; */
+}
+.splide__arrow svg {
+  fill: #ff934a;
+}
+.splide__arrow svg:hover {
+  fill: #ffba8c;
+}
+
+.splide__arrow {
+  /* background-color: #fff; */
+  /* color: #3233; */
+  font-size: 24px;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 70%;
+  margin-left: -40px;
+    margin-right: -40px;
+  /* margin-top: -110px; */
+}
+
+@media screen and (max-width: 500px){
+  .hid{
+    display: none;
+  }
+}
+  @media screen and (max-width: 758px){
+.splide__pagination__page {
+  /* left: 20px; */
+}
+}
+
+  @media screen and (max-width: 1558px) {
+      .splide__arrow {
+          /* background-color: #fff; */
+          font-size: 16px;
+          /* border-radius: 50%; */
+          width: 30px;
+          height: 70%;
+          margin-left: -4px;
+          margin-right: -4px;
+          /* margin-top: -20px; */
+          /* Adjust vertical position */
+        }
+      }
+      @media screen and (min-width: 1558px) {
+       
+        @keyframes bounce-right {
+          
+          0%, 100% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(35px); /* Adjust the distance as needed */
+          }
+        }
+
+      
+
+        @keyframes bounce-left {
+          
+          0%, 100% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(-35px);
+          }
+        }
+            /* Adjust vertical position */
+          }
+       
+
+
+.splide__pagination__page {
+  background: #d4c6c6;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.splide__pagination__page:hover{
+  background: #ffc7a2;
+}
+/* .splide__pagination__page.is-active{ */
+/* } */
+.splide__pagination__page.splide__pagination__page.is-active {
+  background: #ff893b;
+}
+
+
+
+body {
+  font-family: 'Myfont', sans-serif;
+  font-style: normal;
+  /* Use the font family in your styles */
+}
+
+
+.glow-on-hover {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  font-size: 20px;
+  height: 55px;
+
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #857373;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50px;
+  
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ED7D31,  #00ffd5, #002bff, #7a00ff, #ED7D31, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  border-radius: 50px;
+}
+.bg{
+  background: #2C3333;
+}
+.glow-on-hover:active {
+  color: #b64949
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #252222;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+.sidebar {
+  background-color: #333;
+  color: white;
+  width: 65%;
+  z-index: 10;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -65%;
+  /* Initially off-screen */
+  transition: left 0.2s ease-in-out;
+  /* Transition for left property */
+  padding: 20px;
+}
+
+.sidebar.visible {
+  left: 0;
+  /* Move the sidebar to the visible position */
+}
+
+
+.special-bg2{
+  background-color: rgba(43, 50, 59, 0.5);
+  backdrop-filter: blur(15px);
+}
+
+.special-bg{
+  background-color: rgba(43, 50, 59);
+}
+
+
+.serv .splide__arrow--prev{
+  display: none;
+  /* animation: bounce infinite 2s; */
+  transform: translateX(15px);
+  animation-duration: 500ms;
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px); 
+  }
 }
