@@ -37,8 +37,8 @@ const Performance = () => {
         id: 2,
         title: "Service Offer",
         img: feautre_img4,
-        amount: 45,
-        sign: "+",
+        amount: 1,
+        //sign: "+",
         delay: "850",
       }
     ];
