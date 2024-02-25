@@ -24,13 +24,22 @@ const Performance = () => {
         sign: "+",
         delay: "150",
       },
+      
       {
         id: 1,
+        title: "We Work with",
+        img: feautre_img2,
+        amount: 25,
+        sign: "",
+        delay: "450",
+      },
+      {
+        id: 2,
         title: "Total Ad Spend",
         img: feautre_img2,
         amount: 27,
         sign: "%",
-        delay: "450",
+        delay: "750",
       },
       
       {
@@ -56,7 +65,7 @@ const Performance = () => {
         </p>
         <p className="text-3xl lg:text-4xl p-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">Performance Highlights</p>
         <p className="text-base w-full lg:w-1/2 text-center p-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
-          Here at Jifar Agency, we've worked with the best in the industry to produce
+          Here at Jifar Home Services Agency, we've worked with the best in the industry to produce
           thousands of dollars in return on ad spend. We do away with the the
           inefficiencies & formalities that plague most agencies.
         </p>
