@@ -57,7 +57,7 @@ const CompaniesData = [
           Here at E-wamp, we've worked with the best in the
         </p>
       </div>
-      <div className="flex flex-wrap gap-8 justify-center items-center mx-auto">
+      <div className="flex flex-wrap gap-4 lg:gap-8 justify-center items-center mx-auto">
         {
             CompaniesData.map((company) => {
                 return (
