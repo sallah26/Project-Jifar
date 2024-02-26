@@ -22,7 +22,7 @@ const Services = () => {
   const servicesData = [
     {
       id: 0,
-      title: "Mastery demands focus so...",
+      title: "Mastery requires focus, therefore...",
       description1:
         "We don't offer any other services except for paid advertising on Meta...",
       description2:
