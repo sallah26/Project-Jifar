@@ -65,7 +65,7 @@ const CompaniesData = [
                     data-aos="zoom-in" 
                     data-aos-delay={company.delay}
                     key={company.id}
-                    className="w-[43%] md:w-auto card items-center shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 rounded-2xl"
+                    className="card items-center shadow-2xl  shadow-stone-900 dark:shadow-stone-500 special-bg border-2 border-neutral-700  text-white hover:bg-slate-700 rounded-2xl"
                   >
                      <div className="card-inner">
                         <div className="card-front special-bg">

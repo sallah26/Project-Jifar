@@ -145,7 +145,7 @@ const Navbar = () => {
 
         {/* Small devices */}
         {/* Sidebar for small devices */ }
-        <article  className={`lg:hidden fixed z-50 top-0 -left-1/2 h-screen w-1/2 bg-zinc-300 dark:text-white dark:bg-neutral-900 py-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <article  className={`lg:hidden fixed z-50 top-0 bottom-0 -left-1/2 h-screen w-1/2 text-black bg-zinc-300 dark:text-white dark:bg-neutral-900 py-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className='flex flex-col'>
             <div className="flex justify-start mt-3">
               <img src={jifar_logo} className='w-32' alt="Jifar's logo" />
@@ -167,7 +167,7 @@ const Navbar = () => {
                     offset={-70}
                     duration={500}
                     className="px-1 md:px-3 py-2 flex gap-2 hover:translate-x-3 duration-150 items-center "
-                    onClick={() => { setIsOpen(false) }}
+                    onClick={() => { setIsOpen(!isOpen) }}
                       >
                         <MdOutlineElectricalServices className='hid' size={20}/>
                     Services
@@ -182,7 +182,7 @@ const Navbar = () => {
                     offset={-70}
                     duration={500}
                     className="px-1 md:px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { setIsOpen(false) }}
+                    onClick={() => { setIsOpen(!isOpen) }}
                       >
                         <IoHome className='hid' size={20}/>
                         About us
@@ -197,7 +197,7 @@ const Navbar = () => {
                     offset={-70}
                     duration={500}
                     className="px-1 md:px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { setIsOpen(false) }}
+                    onClick={() => { setIsOpen(!isOpen) }}
                       >
                         <FaUsersGear className='hid' size={20}/>
                         Testimonials
@@ -212,7 +212,7 @@ const Navbar = () => {
                     offset={-70}
                     duration={500}
                     className="px-1 md:px-3 py-2 flex gap-2 items-center hover:translate-x-3 duration-150"
-                    onClick={() => { setIsOpen(false) }}
+                    onClick={() => { setIsOpen(!isOpen) }}
                       >
                         <GrContact className='hid' size={20}/>
                         Contact
@@ -227,7 +227,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-7}
                 duration={500}
-                onClick={() => { setIsOpen(false) }}
+                onClick={() => { setIsOpen(!isOpen) }}
               >
                <div className="flex justify-center truncate mt-5">
                   <AnimatedButton namee={"BOOK NOW"} />

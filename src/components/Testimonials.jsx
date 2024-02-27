@@ -100,7 +100,7 @@ const Testimonials = () => {
    }, [slidesPerPage, testimonialsData]);
 
   return (
-    <section className="flex justify-center py-40 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
+    <section className="flex justify-center py-10 lg:py-20 text-black dark:text-neutral-200" id="testimonials">
       <div className="testimonials w-full lg:max-w-[1470px]">
         <div className="p-6 lg:ml-11  flex flex-col gap-2  items-center justify-center">
           <p data-aos="fade-left" data-aos-delay="200" className="text-3xl lg:text-4xl text-center">What Clients Say about us</p>
