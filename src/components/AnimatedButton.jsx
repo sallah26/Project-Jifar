@@ -15,7 +15,7 @@ const App = (props) => {
         rootElement={document.getElementById("root")}
         text={props.namee}
         style={{
-          className: "glow-on-hover"
+          className: "glow-on-hover "
           
         }}
       />

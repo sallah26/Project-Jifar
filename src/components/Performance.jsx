@@ -14,7 +14,7 @@ const Performance = () => {
         once: false // Whether animation should happen only once
     });
 }, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
-
+    // Performance Data is here below
     const PerformanceData = [
       {
         id: 0,
@@ -41,9 +41,16 @@ const Performance = () => {
         sign: "%",
         delay: "750",
       },
-      
       {
         id: 2,
+        title: "Offices",
+        img: feautre_img3,
+        amount: 29,
+        sign: null,
+        delay: "650",
+      },
+      {
+        id: 3,
         title: "Service Offer",
         img: feautre_img4,
         amount: 1,
@@ -54,12 +61,12 @@ const Performance = () => {
   return (
     <section
       id="performance"
-      className="py-8  lg:py-20 mx-auto text-neutral-800 dark:text-neutral-100 relative max-w-[1340px]"
+      className="py-8  lg:py-20 mx-auto text-neutral-800 dark:text-neutral-100 relative max-w-[1470px]"
     >
       <div className="absolute z-20 left-0 mt-6 lg:mt-24">
         {/* <img src={right_curv} className="h-auto" alt="right curv img" /> */}
       </div>
-      <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
+      <div className="flex flex-col text-center items-center justify-center mb-5 lg:mb-10 mx-auto">
         <p className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
           Featured Case Study
         </p>

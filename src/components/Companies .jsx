@@ -45,19 +45,19 @@ const CompaniesData = [
   return (
     <section
       id="performance"
-      className="py-8 flex flex-col special-bg  mx-auto text-neutral-100 "
+      className="p-4 py-8 flex flex-col special-bg  mx-auto text-neutral-100 "
     >
      
       <div className="flex flex-col items-center justify-center mb-5 lg:mb-10 mx-auto">
         <p data-aos="zoom-in" data-aos-delay="250" className="text-md lg:text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]">
           Top Clients
         </p>
-        <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2">Companies That Trust Us</p>
+        <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2 text-center ">Companies That Trust Us</p>
         <p data-aos="zoom-in" data-aos-delay="450" className="text-base w-full  text-center p-[2px]">
           Here at E-wamp, we've worked with the best in the
         </p>
       </div>
-      <div className="flex flex-wrap gap-8 justify-center items-center mx-auto">
+      <div className="flex flex-wrap gap-4 lg:gap-8 justify-center items-center mx-auto">
         {
             CompaniesData.map((company) => {
                 return (

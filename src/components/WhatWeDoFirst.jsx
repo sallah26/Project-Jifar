@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos';
 import meta_image from "../images/logo-Meta.png";
-import right_curv from "../images/bubble-42.png";
+import left_curv from "../images/bubble-42.png";
 
 const WhatWeDoFirst = () => {
   useEffect(() => {
@@ -13,14 +13,14 @@ const WhatWeDoFirst = () => {
   return (
     <section id='about-us' className="relative bg-stone-800 text-neutral-100 special-bg ">
       <div className="absolute left-0 mt-6 lg:mt-24 z-10!important">
-        <img src={right_curv} className="h-auto" alt="right curv img" />
+        <img src={left_curv} className="h-auto" alt="right curv img" />
       </div>
-      <div className="z-30 container p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
+      <div className="z-30 container p-5 md:py-24  mx-auto px-4 text-center md:text-left flex flex-col md:flex-row justify-center items-center max-w-[1470px]">
         <div className="flex py-2 flex-col w-full">
           <p className="text-md my-1 font-bold " data-aos="fade-right" data-aos-delay="50" >
             What we offer | Ads, Just Ads | for Interior Designers
           </p>
-          <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17" data-aos="fade-right" data-aos-delay="100" >
+          <h1 className="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#974915]" data-aos="fade-right" data-aos-delay="100" >
             PAID ADVERTISING
           </h1>
          <p className="text-md mt-8 text-neutral-200" data-aos="fade-right" data-aos-delay="150" >
