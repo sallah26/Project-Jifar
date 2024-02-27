@@ -20,8 +20,8 @@ const Footer = () => {
     <footer id='footer' className="relative special-bg text-md md:text-md text-neutral-200 ">
       <div className='flex flex-col gap-4 items-center justify-center py-4'>
         <img src={jifar_logo} alt="jifar logo" className='w-1/2 md:w-40 pt-3'/>
-        <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold'>Jifar Agency</p>
-        <p><a href='https://jifarhomes.com' className="text-sm">JifarHomeS.com </a>| jifar@homes.com</p>
+        <p className='text-3xl lg:text-4xl text-[#ED7D31] font-semibold'>Jifar Home Services Agency</p>
+        <p><a href='https://jifarhomes.com' className="text-sm">JifarHomeS.com </a>| nesredin@jifarhomes.com</p>
         <div className='flex gap-3 sm:max-w-[300px]'>
           <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1DA1F2] duration-150'>
             <FaTwitter size={22}/>
