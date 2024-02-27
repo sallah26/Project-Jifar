@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // import "@splidejs/react-splide/dist/styles/splide.css";
-import profile1 from "../images/profile_pics/testimonial-1.png"
+import profile1 from "../images/profile_pics/testimonial-1.jpg"
 import profile2 from "../images/profile_pics/testimonial-2.png"
 import profile3 from "../images/profile_pics/testimonial-3.jpg"
 import { IoIosArrowBack } from "react-icons/io";
