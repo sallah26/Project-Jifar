@@ -75,7 +75,7 @@ const Services = () => {
                 <div className="flex flex-col gap-3 ">
             
                   <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-left" data-aos-delay="0" >
-                    Our services are
+                    Our service:
                   </p>
                   <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="50" >{testimonial.title}</p>
                   <p className="text-md" data-aos="fade-left" data-aos-delay="100" >{testimonial.description1}</p>
