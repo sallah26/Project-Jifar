@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import "odometer/themes/odometer-theme-default.css";
 
-import image0 from "../images/case-study-4 (1).png"
+import image0 from "../images/service1.png"
 import image1 from "../images/case-study-5.png";
 import image2 from "../images/case-study-6.png";
 import { MdOutlineVerifiedUser } from "react-icons/md";
