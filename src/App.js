@@ -31,7 +31,7 @@ function App() {
       <Services />
       <Testimonials />
       <Companies />
-      {/* <CalendlyWidget /> */}
+      <CalendlyWidget />
       <Footer />
       
     </div>
