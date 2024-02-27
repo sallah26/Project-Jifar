@@ -17,7 +17,7 @@ import logo_bg from "./images/bubble-39.png";
 
 function App() {
   return (
-    <div className="absolute m-0 p-0 dark:bg-neutral-800 left-0  right-0">
+    <div className="overflow-hidden m-0 p-0 dark:bg-neutral-800 left-0  right-0">
       <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0  text-white bg-[#ED7D31]">
         <DarkModeToggle color={"white"} />
       </div>
