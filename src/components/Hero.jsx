@@ -31,7 +31,7 @@ const Hero = () => {
 
 
           <div className="mt-2" data-aos="fade-up" data-aos-delay="1000" >
-            <AnimatedButton namee={"Schedule With Me"} myWidth="300px" />
+            <AnimatedButton namee={"Schedule With Us"} myWidth="300px" />
           </div>
         </div>
         <div className=" lg:p-6" >
