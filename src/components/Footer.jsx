@@ -26,18 +26,18 @@ const Footer = () => {
           <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#1DA1F2] duration-150'>
             <FaTwitter size={22}/>
           </a>
-          <a href='#' className='p-2.5  bg-slate-900 rounded-sm hover:text-[#1877F2] duration-150'>
+          <a href='https://www.facebook.com/profile.php?id=61550310263050' className='p-2.5  bg-slate-900 rounded-sm hover:text-[#1877F2] duration-150'>
             <FaFacebookF size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#bc2a8d] duration-150'>
+          <a href='https://www.instagram.com/jifar111/' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#bc2a8d] duration-150'>
             <FaInstagram size={22}/>
           </a>
-          <a href='https://www.youtube.com/channel/UCpIilKN9IOLBX2I6PWRPHGQ' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#FF0000] duration-150'>
+          {/* <a href='' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#FF0000] duration-150'>
             <FaYoutube size={22}/>
           </a>
-          <a href='#' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#E60023] duration-150'>
+          <a href='' className='p-2.5 bg-slate-900 rounded-sm hover:text-[#E60023] duration-150'>
             <FaPinterestP size={22}/>
-          </a>
+          </a> */}
         </div>
       </div>
         <p className="text-center p-2 bg-slate-800 cpright mt-5"><span className='text-[#ED7D31]'>©copyright 2024 Jifar Agency</span> | <a className='text-blue-500' href="https://SelahadinH.vercel.app">Developed By Selahadin H.</a></p>

@@ -8,6 +8,9 @@ import logo_jifar2 from "../images/icon-34.png";
 import logo_jifar3 from "../images/icon-37.png";
 import logo_jifar4 from "../images/icon-39.png";
 
+// remove this when you put your real data
+import jifar_logo from "../images/jifar_logo.svg"
+
 const Companies = () => {
   useEffect(() => {
     AOS.init({
@@ -18,25 +21,25 @@ const Companies = () => {
 const CompaniesData = [
   {
     id: 0,
-    name: "Jifar Production",
+    name: "Jifar Agency",
     delay: "300",
     logo: logo_jifar1,
   },
   {
     id: 1,
-    name: "Jifar Production",
+    name: "Jifar Agency",
     delay: "500",
     logo: logo_jifar2,
   },
   {
     id: 2,
-    name: "Jifar Production",
+    name: "Jifar Agency",
     delay: "700",
     logo: logo_jifar3,
   },
   {
     id: 3,
-    name: "Jifar Production",
+    name: "Jifar Agency",
     delay: "900",
     logo: logo_jifar4,
   },
@@ -72,7 +75,7 @@ const CompaniesData = [
                           <p className="text-lg text-center p-3 lg:text-xl">{company.name}</p>
                         </div>
                         <div className="card-back">
-                          <img src="your-image-url.jpg" className="rounded-2xl" alt="Card Image" />
+                          <img src={jifar_logo} width={20} className=" rounded-2xl" alt="Card Image" />
                         </div>
                       </div>
                     
