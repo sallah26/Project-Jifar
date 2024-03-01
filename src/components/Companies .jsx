@@ -54,7 +54,7 @@ const CompaniesData = [
         </p>
         <p data-aos="zoom-in" data-aos-delay="350" className="text-3xl lg:text-4xl p-2 text-center ">Companies That Trust Us</p>
         <p data-aos="zoom-in" data-aos-delay="450" className="text-base w-full  text-center p-[2px]">
-          Here at E-wamp, we've worked with the best in the
+          Here at Jifar Home services Agency, we've worked with the best in the the industry
         </p>
       </div>
       <div className="flex flex-wrap gap-4 lg:gap-8 justify-center items-center mx-auto">

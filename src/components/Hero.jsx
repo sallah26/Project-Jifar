@@ -20,7 +20,7 @@ const Hero = () => {
                 Interior Design
             </p>
           
-              <p data-aos="fade-up" data-aos-delay="1000" className="text-4xl font-semibold md:text-6xl lg:font-bold">Business With Ad</p>
+              <p data-aos="fade-up" data-aos-delay="1000" className="text-4xl font-semibold md:text-6xl lg:font-bold">Business With Meta Ads.</p>
           <p data-aos="fade-up" data-aos-delay="1200" className="p-2  ">
           We specialize in helping interior design businesses in achieving exceptionally high ROI through our expertise in paid advertising.
           </p>
@@ -31,7 +31,7 @@ const Hero = () => {
 
 
           <div className="mt-2" data-aos="fade-up" data-aos-delay="1000" >
-            <AnimatedButton namee={"Schedule With Me"} myWidth="300px" />
+            <AnimatedButton namee={"Schedule With Us"} myWidth="300px" />
           </div>
         </div>
         <div className=" lg:p-6" >

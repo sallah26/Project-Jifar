@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // import "@splidejs/react-splide/dist/styles/splide.css";
-import profile1 from "../images/profile_pics/testimonial-1.png"
+import profile1 from "../images/profile_pics/testimonial-1.jpg"
 import profile2 from "../images/profile_pics/testimonial-2.png"
-import profile3 from "../images/profile_pics/testimonial-3.png"
+import profile3 from "../images/profile_pics/testimonial-3.jpg"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -18,49 +18,32 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 0,
-      name: "Selahadin H.",
-      expertise: "Software Engineer",
+      name: "Raja H.",
+      expertise: "Interior Designer",
       delay: "200",
       profile: profile1,
       message:
-        "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
+        "“Choosing Jifar Agency was a game-changer! Their marketing expertise skyrocketed our business, bringing in more clients and boosting our revenue. Highly recommend their services for any home interior business!. ”",
     },
     {
       id: 1,
       name: "Alice Johnson",
-      expertise: "UX Designer",
+      expertise: "Business Owner",
       delay: "400",
       profile: profile2,
       message:
-        "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
+        "“Thanks, our business has skyrocketed, especially with their expert use of Facebook advertising! Their targeted strategies have attracted a steady stream of clients, propelling our success to new heights. Highly recommend their services to any home interior business aiming for rapid growth! ”",
     },
     {
       id: 2,
-      name: "Kian Rashidi",
-      expertise: `Frontend Developer at Google`,
+      name: "Yonas J.",
+      expertise: `Inerior Business Owner`,
       delay: "600",
       profile: profile3,
       message:
-        "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
+        "“Their mastery of Facebook Ads generated a surge of inquiries, leading to a significant increase in bookings. Their deep understanding of the interior design industry is evident in the exceptional results they consistently deliver. ”",
     },
-    {
-      id: 3,
-      name: "Kian Rashidi",
-      expertise: `Frontend Developer at Google`,
-      delay: "800",
-      profile: profile3,
-      message:
-        "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
-    },
-    {
-      id: 4,
-      name: "Kian Rashidi",
-      expertise: `Interior desingner`,
-      delay: "1000",
-      profile: profile3,
-      message:
-        "“Their Facebook Ads expertise brought a flood of inquiries, and I've seen a substantial bookings. They understand the event industry inside out, and it shows in the results they deliver. ”",
-    },
+  
   ];
 
   const [slidesPerPage, setSlidesPerPage] = useState(3);
@@ -105,8 +88,7 @@ const Testimonials = () => {
         <div className="p-6 lg:ml-11  flex flex-col gap-2  items-center justify-center">
           <p data-aos="fade-left" data-aos-delay="200" className="text-3xl lg:text-4xl text-center">What Clients Say about us</p>
           <p data-aos="fade-left" data-aos-delay="350" className="text-md w-full lg:w-1/2 text-center">
-            We ask our clients to share their experience with us by posting on
-            social media and here it goes...
+            Here's how our clients express their experience with us when they share it on social media:
           </p>
         </div>
         <Splide options={splideOptions}>

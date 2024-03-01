@@ -27,7 +27,7 @@ const Performance = () => {
       
       {
         id: 1,
-        title: "We Work with",
+        title: "Max. clients",
         img: feautre_img2,
         amount: 25,
         sign: "",

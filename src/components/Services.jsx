@@ -4,9 +4,9 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import "odometer/themes/odometer-theme-default.css";
 
-import image0 from "../images/case-study-4 (1).png"
+import image0 from "../images/service1.png"
 import image1 from "../images/case-study-5.png";
-import image2 from "../images/case-study-6.png";
+import image2 from "../images/service3.webp";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 
 const Services = () => {
@@ -38,9 +38,9 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "We only work with interior design businesses. We only do Meta ads.",
+      title: "Leads that convert over and over again. Quality.",
       description1:
-        "We are a specialist interior design leads,S company that works only with interior design businesses. We do not work with any other industry. We use Meta ads to locate and attract motivated, qualified ‘ready to buy’ customers.",
+        "Our clients rave about our leads, highlighting three key advantages over those from Google ads, Facebook ads, Instagram ads, and other traffic sources: they're more cost-effective to acquire, convert into sales faster, and are more reliable in securing successful transactions.",
       description2:
         null,
     },
@@ -75,7 +75,7 @@ const Services = () => {
                 <div className="flex flex-col gap-3 ">
             
                   <p className="text-md lg:text-lg -pb-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#ED7D31] to-[#a34f17]" data-aos="fade-left" data-aos-delay="0" >
-                    Our services are
+                    Our service:
                   </p>
                   <p className="text-3xl lg:text-4xl" data-aos="fade-right" data-aos-delay="50" >{testimonial.title}</p>
                   <p className="text-md" data-aos="fade-left" data-aos-delay="100" >{testimonial.description1}</p>
