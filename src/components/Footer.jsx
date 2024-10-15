@@ -40,7 +40,7 @@ const Footer = () => {
           </a> */}
         </div>
       </div>
-        <p className="text-center p-2 bg-slate-800 cpright mt-5"><span className='text-[#ED7D31]'>©copyright 2024 Jifar Agency</span> | <a className='text-blue-500' href="https://SelahadinH.vercel.app">Developed By Selahadin H.</a></p>
+        <p className="text-center p-2 bg-slate-800 cpright mt-5"><span className='text-[#ED7D31]'>©copyright 2024 Jifar Agency</span> | <a className='text-blue-500' href="https://selahadin.tech">Developed By Selahadin H.</a></p>
       <div className="absolute z-50 flex flex-col gap-1 mb-less  rounded-full bg-[#ED7D31] text-white  ">
         <ScrollLink
             to="hero"
