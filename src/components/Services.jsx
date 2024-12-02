@@ -89,10 +89,10 @@ const Services = () => {
                         this is nice
                       </p>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="500" className=" border-l-2 border-neutral-500">
+                    <div data-aos="fade-left" data-aos-delay="200" className=" border-l-2 border-neutral-500">
                       <span  className="h-5 my-line bg-red-500"></span>
                     </div>
-                    <div className="" data-aos="fade-left" data-aos-delay="650">
+                    <div className="" data-aos="fade-left" data-aos-delay="350">
                       <AnimatedCounter value={56} />%
                       <p className="text-white " style={{ fontSize: "20px" }}>
                         this is nicee

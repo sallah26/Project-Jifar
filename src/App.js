@@ -21,7 +21,7 @@ function App() {
       <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-zinc-900 text-white dark:bg-fuchsia-600">
         <DarkModeToggle color={"white"} />
       </div>
-      <img src={logo_bg} alt='logo background' className='absolute top-0 z-10 left-0 dark:opacity-10'/>
+      <img src={logo_bg} alt='logo background' className='absolute top-0 z-0 left-0 dark:opacity-10'/>
       <Navbar />
       <div className="mt-2">
         <Hero />

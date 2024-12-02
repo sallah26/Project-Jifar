@@ -1,12 +1,19 @@
 // Navbar.js
 import React, { useState, useEffect } from 'react';
+import AOS from "aos";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import AnimatedButton from './AnimatedButton';
+import DarkModeToggle from './DarkMode';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    AOS.init({
+        once: false // Whether animation should happen only once
+    });
+}, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -34,13 +41,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`text-white ${isSticky ? 'special-bg2 top-0' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
-      <div className="container max-w-[1400px] mx-auto flex items-center justify-between lg:py-5 lg:px-5">
-        <div className="cursor-pointer z-30" onClick={scrollToTop}>
+    <nav className={` ${isSticky ? 'special-bg2 top-0' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
+      <div className="container max-w-[1400px] mx-auto flex items-center justify-between p-5">
+        <div data-aos="fade-down" data-aos-delay="200" className="cursor-pointer z-30 " onClick={scrollToTop}>
           Your Logo
         </div>
         {/* Large devices */}
-        <div className="hidden lg:flex items-center space-x-7 text-md">
+        <div className="hidden z-30 lg:flex items-center space-x-7 text-md">
           <ScrollLink
             to="services"
             href=''
@@ -49,6 +56,8 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             className="hover:text-gray-400"
+            data-aos="fade-down" 
+            data-aos-delay="200"
           >
             Services
           </ScrollLink>
@@ -59,6 +68,8 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             className="hover:text-gray-300 duration-100"
+            data-aos="fade-down" 
+            data-aos-delay="300"
           >
             About
           </ScrollLink>
@@ -69,6 +80,8 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             className="hover:text-gray-300"
+            data-aos="fade-down" 
+            data-aos-delay="400"
           >
             Testimonials
           </ScrollLink>
@@ -79,6 +92,8 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             className="hover:text-gray-300"
+            data-aos="fade-down" 
+            data-aos-delay="500"
           >
             Contact
           </ScrollLink>
@@ -89,18 +104,25 @@ const Navbar = () => {
             offset={-70}
             duration={500}
             className=""
+            data-aos="fade-down" 
+            data-aos-delay="600"
           >
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex z-30">
             <AnimatedButton name={"BOOK NOW"} />
           </div>
           </ScrollLink>
+          
+        </div>
+        <div className='lg:hidden z-40 flex gap-6'>
+        <div className=''>
+            <DarkModeToggle />
+          </div>
+        <div className="z-30 lg:hidden cursor-pointer" onClick={toggleNavbar}>
+          <HiOutlineMenuAlt2 size={30} />
+          </div>
         </div>
 
         {/* Small devices */}
-        <div className="lg:hidden cursor-pointer" onClick={toggleNavbar}>
-          <HiOutlineMenuAlt2 size={30} />
-          </div>
-
         {/* Sidebar for small devices */}
         <div className={`lg:hidden fixed top-0 right-0 h-screen w-1/2 bg-gray-800 p-4 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <ScrollLink
