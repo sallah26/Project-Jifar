@@ -34,9 +34,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`text-white ${isSticky ? 'special-bg2 top-0' : 'bg-transparent pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
+    <nav className={`text-white ${isSticky ? 'special-bg2 top-0' : 'bg-transparent text-md text-neutral-900 dark:text-slate-200 pt-5'} transition-all duration-300 ${isSticky ? 'z-40 fixed left-0  right-0 shadow-lg' : ''}`}>
       <div className="container max-w-[1400px] mx-auto flex items-center justify-between lg:py-5 lg:px-5">
-        <div className="cursor-pointer" onClick={scrollToTop}>
+        <div className="cursor-pointer z-30" onClick={scrollToTop}>
           Your Logo
         </div>
         {/* Large devices */}
