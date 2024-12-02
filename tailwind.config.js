@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      filter: {
+        dimmer: 'brightness(10%)',
+      },
+    },
   },
   plugins: [],
 }

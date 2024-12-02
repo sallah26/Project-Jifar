@@ -24,6 +24,9 @@ code {
   font-family: 'Myfont';
   src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff');
 }
+.brightness-30 {
+  filter: brightness(30%);
+}
 
 
 .rdt .form-control{

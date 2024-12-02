@@ -14,19 +14,19 @@ const WhatWeDoFirst = () => {
 }, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount
 
   return (
-    <section className="bg-stone-800 text-neutral-100 special-bg relative">
-      <div className="absolute z-20 left-0 mt-6 lg:mt-24">
+    <section className="relative bg-stone-800 text-neutral-100 special-bg ">
+      <div className="absolute left-0 mt-6 lg:mt-24">
         <img src={right_curv} className="h-auto" alt="right curv img" />
       </div>
-      <div className="container z-20 p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
+      <div className="container p-5 md:py-24  mx-auto px-4 flex flex-col md:flex-row justify-center items-center max-w-[1340px]">
         <div className="flex p-2 flex-col gap-1 w-full">
-          <p className="text-md font-bold z-30 " data-aos="fade-right" data-aos-delay="100" >
+          <p className="text-md font-bold " data-aos="fade-right" data-aos-delay="100" >
             What we offer | Ads, Just Ads | Only For Event Planners
           </p>
-          <h1 className=" z-30 text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="250" >
+          <h1 className="  text-5xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-700" data-aos="fade-right" data-aos-delay="250" >
             PAID ADVERTISING
           </h1>
-          <p className="text-md mt-8 z-30 text-neutral-200" data-aos="fade-right" data-aos-delay="400" >
+          <p className="text-md mt-8 text-neutral-200" data-aos="fade-right" data-aos-delay="400" >
             We do one thing - we just do it with a monastic focus and better
             than anyone else.If you want an agency that offers a full service
             solution of everything that won’t move the needle forward, we’re not

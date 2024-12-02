@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Form from "./components/Form";
 import Companies from './components/Companies ';
+import logo_bg from "./images/bubble-39.png";
 // import Companies from "./components/Companies.jsx";
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
       <div className="z-50 hidden fixed lg:flex   top-40 py-3 px-4 rounded-r-full left-0 bg-zinc-900 text-white dark:bg-fuchsia-600">
         <DarkModeToggle color={"white"} />
       </div>
+      {/* <div className=""> */}
+      <img src={logo_bg} alt='logo background' className='absolute top-0 left-0 brightness-100 dark:brightness-30'/>
+      {/* </div> */}
       <Navbar />
-      <div className="mt-20">
+      <div className="mt-2">
         <Hero />
       </div>
       <WhatWeDoFirst />

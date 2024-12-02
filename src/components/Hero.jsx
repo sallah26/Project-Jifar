@@ -30,7 +30,8 @@ const Hero = () => {
             and ineffective ad campaigns. It's time to make your ad-budget
             count, scale your business and blow up your sales.
           </p>
-          <div className="mt-2" data-aos="fade-up" data-aos-delay="1400" daa-aos-duration="3000">
+          <div className="mt-2" data-aos="fade-up" data-aos-offset="150" data-aos-delay="50" >
+            
             <AnimatedButton name={"BOOK A QUICK CALL"} myWidth="300px" />
           </div>
         </div>
